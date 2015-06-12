@@ -1,0 +1,114 @@
+
+
+
+.container-fluid--home {
+  background-color: $brand-primary;
+
+}
+// Navbar Brand/project name
+
+.navbar-brand {
+  float: left;
+  padding: $navbar-padding-vertical 0px;
+  font-size: $font-size-large;
+  line-height: $line-height-computed;
+  height: $navbar-height;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  > img {
+    display: block;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: -$navbar-padding-horizontal;
+    }
+  }
+}
+
+.navbar-nav li:last-child a {
+  padding-right: 0px;
+}
+
+.navbar-nav > li {
+   opacity: 1.0;
+   transition: opacity 0.25s ease-in-out;
+   transform: translateZ(0);
+
+
+}
+
+
+
+.navbar-nav:hover > li {
+  opacity: 0.5;
+}
+
+.navbar-nav:hover > li:hover {
+  opacity: 1.0;
+}
+
+
+
+
+//
+// Jumbotron
+// --------------------------------------------------
+
+
+.jumbotron {
+  padding: $jumbotron-padding ($jumbotron-padding / 3);
+  margin-bottom: $jumbotron-padding;
+  color: $jumbotron-color;
+  background-color: transparent;
+
+  h1,
+  .h1 {
+    color: $jumbotron-heading-color;
+    font-size: $font-size-h4;
+  }
+
+  p {
+    margin-bottom: ($jumbotron-padding / 2);
+    font-size: $jumbotron-font-size;
+    font-weight: 200;
+  }
+
+  > hr {
+    border-top-color: darken($jumbotron-bg, 10%);
+  }
+
+  a {
+    color: $white;
+  }
+
+  .container &,
+  .container-fluid & {
+    border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+    padding: ($jumbotron-padding * 10) 0 ($jumbotron-padding * 3) 0;
+
+    .container &,
+    .container-fluid & {
+      padding-left:  ($jumbotron-padding * 0);
+      padding-right: ($jumbotron-padding * 0);
+    }
+
+    h1,
+     .h1 {
+       font-size: $font-size-h2;
+
+    }
+  }
+}
