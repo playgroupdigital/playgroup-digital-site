@@ -1,0 +1,70 @@
+.project {
+position: relative;
+ -webkit-backface-visibility: hidden;
+}
+
+
+.project-block {
+  background: $brand-primary;
+}
+.project-block img {
+opacity: 0.85;
+transition: all 0.25s ease-in-out;
+z-index: 0;
+}
+
+.project-block:hover img {
+  opacity: 0.25;
+
+}
+
+
+.project-block--text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  z-index: 1;
+}
+
+.project-block--text {
+  color: $white;
+}
+
+.project-block--text a{
+  color: $white;
+  border-bottom: $border-bottom-heading $white;
+  display: inline-block;
+}
+
+.project-block--text a h1 {
+  margin-top: 0;
+  margin-bottom:  5px;
+  text-decoration: $link-hover-decoration;
+}
+
+
+
+.project-block--text h4 {
+  margin: 0;
+}
+
+
+
+
+.project-block--text a h1:after {
+  content: "→";
+  font-family: $font-family-monospace;
+  font-weight: normal;
+  transition: all 0.25s ease-in-out;
+
+  margin-left: 10px;
+  opacity: 1;
+}
+
+
+.project-block--text a:hover h1:after {
+  margin-left: 25px;
+  opacity: 1;
+}
+
+

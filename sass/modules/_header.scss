@@ -1,5 +1,7 @@
 
-
+$nav-link-padding:                          10px 22px;
+$nav-link-padding-small:                    10px 0px;
+$screen-sm:                                 768px;
 
 .container-fluid--home {
   background-color: $brand-primary;
@@ -35,22 +37,168 @@
   padding-right: 0px;
 }
 
+
+
+
 .navbar-nav > li {
    opacity: 1.0;
-   transition: opacity 0.25s ease-in-out;
+   transition: all 0.25s ease-in-out;
    transform: translateZ(0);
+   font-family:$font-family-sans-serif-demi;
+}
 
 
+// Navbar toggle
+//
+// Custom button for toggling the `.navbar-collapse`, powered by the collapse
+// JavaScript plugin.
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: $navbar-padding-horizontal;
+  padding: 9px 0px;
+  @include navbar-vertical-align(34px);
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  border-radius: $border-radius-base;
+
+  // We remove the `outline` here, but later compensate by attaching `:hover`
+  // styles to `:focus`.
+  &:focus {
+    outline: 0;
+  }
+
+  // Bars
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    display: none;
+  }
+}
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+
+  &:hover {
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+  }
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+}
+
+.navbar-toggle.collapsed {
+  .top-bar {
+    transform: rotate(0);
+  }
+  .middle-bar {
+    opacity: 1;
+  }
+  .bottom-bar {
+    transform: rotate(0);
+  }
 }
 
 
 
+// Navbar work arrow
+.navbar-nav li:first-child a:after {
+  content: "↓";
+  font-family: $font-family-monospace;
+  font-weight: normal;
+  transition: all 0.25s ease-in-out;
+  opacity: 0;
+   margin-left: 5px;
+  margin-right: -5px;
+
+  position: relative;
+  top:-10px;
+}
+
+.navbar-nav li:first-child:hover a:after {
+  content: "↓";
+  opacity: 1;
+  top:0px;
+}
+
+
+
+
+// Navbar hover inactive items
 .navbar-nav:hover > li {
   opacity: 0.5;
 }
 
 .navbar-nav:hover > li:hover {
   opacity: 1.0;
+}
+
+
+
+// Navabr mobile link padding
+
+@media screen and (max-width: $screen-sm - 1) {
+
+
+.nav {
+  > li {
+    > a {
+      padding: $nav-link-padding-small;
+       }
+    }
+  }
+}
+
+
+
+// Navbar collapse (body)
+//
+// Group your navbar content into this for easy collapsing and expanding across
+// various device sizes. By default, this content is collapsed when <768px, but
+// will expand past that for a horizontal display.
+//
+// To start (on mobile devices) the navbar links, forms, and buttons are stacked
+// vertically and include a `max-height` to overflow in case you have too much
+// content for the user's viewport.
+
+
+@media (max-width: $grid-float-breakpoint) {
+.navbar-collapse {
+  overflow-x: visible;
+  padding-right: $navbar-padding-horizontal;
+  padding-left:  $navbar-padding-horizontal;
+  border-top: none;
+  box-shadow: none;
+  @include clearfix;
+  -webkit-overflow-scrolling: touch;
+  &.in {
+    overflow-y: auto;
+  }
+}
 }
 
 
@@ -62,7 +210,7 @@
 
 
 .jumbotron {
-  padding: $jumbotron-padding ($jumbotron-padding / 3);
+  padding: $jumbotron-padding 0;
   margin-bottom: $jumbotron-padding;
   color: $jumbotron-color;
   background-color: transparent;
@@ -96,7 +244,23 @@
     max-width: 100%;
   }
 
-  @media screen and (min-width: $screen-sm-min) {
+   @media screen and (min-width: $screen-sm-min) {
+    padding: ($jumbotron-padding * 6) 0 ($jumbotron-padding * 3) 0;
+
+    .container &,
+    .container-fluid & {
+      padding-left:  ($jumbotron-padding * 0);
+      padding-right: ($jumbotron-padding * 0);
+    }
+
+    h1,
+     .h1 {
+       font-size: $font-size-h3;
+
+    }
+  }
+
+  @media screen and (min-width: $screen-md-min) {
     padding: ($jumbotron-padding * 10) 0 ($jumbotron-padding * 3) 0;
 
     .container &,

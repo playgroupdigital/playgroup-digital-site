@@ -1,16 +1,16 @@
 // Import Variables
 @import "base/variables";
 
-
 // Import Bootstrap for Sass
 @import "vendor/bootstrap";
 
 // Import Grid Css
 @import "layout/grid";
 
+// Import Type Styles
 @import "base/typography";
 
-
-
-// Import Header Styles
+// Import Module Styles
 @import "modules/header";
+@import "modules/block-section";
+@import "modules/project-block";

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Playgroup Digital</title>
 
     <!-- Bootstrap -->
     <link href="css/style.css" rel="stylesheet">
@@ -17,55 +17,90 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script type="text/javascript" src="http://fast.fonts.net/jsapi/b946a5b1-e9c4-4bc0-9171-15b4ec28e3e9.js"></script>
+   <script type="text/javascript" src="http://fast.fonts.net/jsapi/b946a5b1-e9c4-4bc0-9171-15b4ec28e3e9.js"></script>
   </head>
     <body role="document">
     <!-- Fixed navbar -->
 
 
     <div class="container-fluid container-fluid--home max-width">
-    <nav class="navbar navbar-inverse col-sm-16 col-sm-push-1">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Logo</a>
-        </div>
-
-        <div id="navbar" class="navbar-collapse collapse  navbar-right ">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#contact">Contact</a></li>
-           </ul>
-        </div><!--/.nav-collapse -->
-
-
-    </nav>
-
-
-
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <!-- Navbar -->
         <div class="row">
-        <div class=" col-xs-15 col-sm-10 col-sm-push-1">
-        <h1 class="h2">We’re a creative, brand focussed agency crafting <a href="">memorable digital experiences</a> that transform brands and captivate people.</h1>
-        </div>
-        </div>
+          <nav class="navbar navbar-inverse col-xs-16 col-xs-push-1">
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Logo</a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse  navbar-right ">
+              <ul class="nav navbar-nav">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+               </ul>
+            </div><!--/.nav-collapse -->
+        </nav>
       </div>
-    </div> <!-- /container -->
+      <!-- /Navbar -->
+
+        <!-- hero -->
+        <div class="jumbotron">
+          <div class="row">
+            <div class=" col-xs-15 col-sm-14 col-md-10 col-xs-push-1">
+              <h1 class="h2">We’re a creative, brand focussed agency crafting <a href="">memorable digital experiences</a> that transform brands and captivate people.</h1>
+            </div>
+          </div>
+        </div>
+      <!-- /hero -->
+    </div>
+    <!-- /container -->
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-16 col-sm-push-1">Latest from the studio</div>
+      <div class="row block-section">
+        <div class="col-xs-16 col-xs-push-1 block-section--heading" id="work"><p class="">Latest from the studio</p></div>
       </div>
     </div>
+
+    <!-- project -->
+    <div class="container-fluid project">
+      <div class="row project-block">
+         <div class="col-xs-16 col-xs-push-1 project-block--text" >
+         <h4>Descriptor of what we did for —</h4>
+          <a href="#"><h1>Client Name/Product Name</h1></a>
+        </div>
+        <img src="http://www.placecage.com/c/1600/820" alt="" class="img-responsive" >
+      </div>
+    </div>
+    <!-- /project -->
+      <!-- project -->
+    <div class="container-fluid project">
+      <div class="row project-block">
+         <div class="col-xs-16 col-xs-push-1 project-block--text" >
+         <h4>Descriptor of what we did for —</h4>
+          <a href="#"><h1>Client Name/Product Name</h1></a>
+        </div>
+        <img src="http://www.placecage.com/c/1610/820" alt="" class="img-responsive" >
+      </div>
+    </div>
+    <!-- /project -->
+      <!-- project -->
+    <div class="container-fluid project">
+      <div class="row project-block">
+         <div class="col-xs-16 col-xs-push-1 project-block--text" >
+         <h4>Descriptor of what we did for —</h4>
+          <a href="#"><h1>Client Name/Product Name</h1></a>
+        </div>
+        <img src="http://www.placecage.com/c/1620/820" alt="" class="img-responsive" >
+      </div>
+    </div>
+    <!-- /project -->
 
 
 
@@ -75,6 +110,22 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+    </script>
 
   </body>
 </html>
