@@ -14,3 +14,12 @@
 @import "modules/header";
 @import "modules/block-section";
 @import "modules/project-block";
+@import "modules/blog-section";
+@import "modules/twitter-section";
+@import "modules/footer";
+
+
+
+html {
+  overflow-y: scroll;
+}

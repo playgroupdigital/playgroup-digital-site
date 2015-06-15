@@ -3,5 +3,13 @@
 }
 
 .block-section--heading {
-  padding: ($jumbotron-padding * 3) 0 $jumbotron-padding 0;
+  padding: ($grid-gutter-width * 4.5) 0 ($grid-gutter-width * 3) 0;
+  color: $gray-light;
+  @media screen and (min-width: $screen-sm-min) {
+    padding: ($grid-gutter-width * 9) 0 ($grid-gutter-width * 4.5) 0;
+  }
+}
+
+.block-section--heading p {
+  margin-bottom: 0;
 }

@@ -1,0 +1,54 @@
+.footer {
+  background: $brand-grey;
+  padding: ($grid-gutter-width * 4.5) 0 ($grid-gutter-width * 4.5) 0;
+  @media screen and (min-width: $screen-sm-min) {
+    padding: ($grid-gutter-width * 6) 0 ($grid-gutter-width * 4.5) 0;
+  }
+}
+
+.footer-text {
+  color: $white;
+}
+
+.footer-text a {
+  color: $white;
+  text-decoration: $link-hover-underline;
+}
+
+.mailchimp-form {
+}
+.mailchimp-form input {
+    border: 1px none;
+    background: $brand-grey;
+  }
+.mailchimp-form input.email, .mailchimp-form input.name  {
+  color: #dadada;
+  display: block;
+  float: left;
+  margin:0 ($grid-gutter-width *2) ($grid-gutter-width *2) 0 ;
+  padding-left: 0;
+  border-bottom: 1px solid #dadada;
+  width:100%;
+
+}
+
+.mailchimp-form input[type="submit"] {
+  background: $brand-grey;
+  display: block;
+  padding-left: 0;
+  color: $white;
+  text-decoration: $link-hover-underline;
+  text-align: left;
+  clear: both;
+}
+
+.mailchimp-form input[type="submit"]:hover {
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+textarea, input { outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}

@@ -1,8 +1,9 @@
-$max-width: 1400px;
+// Max width for container fluid
+$max-width: 1350px;
 
-
+//colours
 $brand-grey:             #42484D;
-$sub-grey:               #9b9b9b;
+
 
 
 
@@ -13,4 +14,13 @@ $font-family-sans-serif:  "AvenirNextLTW01-Medium", Helvetica, Arial, sans-serif
 $font-family-sans-serif-demi:  'Avenir Next LT W01 Demi', Helvetica, Arial, sans-serif;
 
 
-$border-bottom-heading:  3px solid;
+// Divider Border
+$border-bottom-divide: 1px solid;
+
+//Heading border bottom
+$border-bottom-heading:  2px solid;
+$border-bottom-heading-lg:  3px solid;
+
+// Nav padding
+$nav-link-padding-small:                    10px 0px;
+

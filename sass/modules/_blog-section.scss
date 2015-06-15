@@ -1,0 +1,62 @@
+.blog-section {
+  background: $white;
+  padding-bottom: $grid-gutter-width *4.5;
+  border-bottom: $border-bottom-divide $gray-light-border;
+}
+
+.blog-section--text {
+  padding: 0 0 ($grid-gutter-width * 3) 0;
+  color: $gray-light;
+  @media screen and (min-width: $screen-sm-min) {
+     padding: 0 0 ($grid-gutter-width * 4.5) 0;
+  }
+}
+
+.blog-section--text p {
+  margin-bottom: 0;
+}
+
+.blog-section--text a {
+  margin-bottom: $grid-gutter-width;
+  display: inline-block;
+}
+
+
+.blog-section h1{
+  display: inline;
+  margin: 0 0 $grid-gutter-width * 2 0;
+  color: $brand-primary;
+  font-family: $font-family-sans-serif-demi;
+  text-decoration: $link-hover-decoration;
+  border-bottom: $border-bottom-heading $brand-primary;
+  font-size: $font-size-h4;
+    @media screen and (min-width: $screen-sm-min) {
+      font-size: $font-size-h2;
+      border-bottom: $border-bottom-heading-lg $brand-primary;
+    }
+    @media screen and (min-width: $screen-md-min) {
+
+    }
+}
+.blog-section h1:after {
+  content: "→";
+  font-family: $font-family-monospace;
+  font-weight: normal;
+  transition: all 0.25s ease-in-out;
+  margin-left: $grid-gutter-width;
+  opacity: 1;
+}
+.blog-section a:hover h1:after {
+  margin-left: ($grid-gutter-width * 2);
+  @media screen and (min-width: $screen-sm-min) {
+    margin-left: ($grid-gutter-width * 2);
+    }
+}
+.blog-section h4 {
+  margin: 0 0 $grid-gutter-width 0;
+  font-size: $font-size-base;
+  @media screen and (min-width: $screen-sm-min) {
+    font-size: $font-size-h4;
+  }
+}
+
