@@ -48,7 +48,7 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-   $font-family-sans-serif:  "AvenirNextLTW01-Medium", Helvetica, Arial, sans-serif;
+// $font-family-sans-serif:  'AvenirNextLTW01-Regular', Helvetica, Arial, sans-serif;
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
    $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -160,7 +160,7 @@
 
 // $btn-primary-color:              #fff
 // $btn-primary-bg:                 $brand-primary
-// $btn-primary-border:             darken($btn-primary-bg, 5%)
+   $btn-primary-border:             $white;
 
 // $btn-success-color:              #fff
 // $btn-success-bg:                 $brand-success
@@ -424,7 +424,7 @@
 //##
 
 //=== Shared nav styles
-   $nav-link-padding:                          10px 22px;
+   $nav-link-padding:                          10px ($grid-gutter-width * 3);
 // $nav-link-hover-bg:                         $gray-lighter
 
 // $nav-disabled-link-color:                   $gray-light

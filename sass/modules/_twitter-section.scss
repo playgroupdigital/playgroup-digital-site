@@ -4,9 +4,10 @@
 
 .twitter-block-section--heading {
   color: $brand-grey;
-  padding: ($grid-gutter-width * 6) 0 ($grid-gutter-width * 4.5) 0;
+  padding-top: ($grid-gutter-width * 4.5);
+  padding-bottom: ($grid-gutter-width * 4.5);
   @media screen and (min-width: $screen-sm-min) {
-    padding: ($grid-gutter-width * 9) 0 ($grid-gutter-width * 4.5) 0;
+    padding-top: ($grid-gutter-width * 9);
   }
 }
 
@@ -28,10 +29,12 @@ float: left;
 }
 
 .twitter-section--text {
-  padding: 0 0 ($grid-gutter-width * 2.5) 0;
+  padding-top: 0;
+  padding-bottom: ($grid-gutter-width * 2.5);
   color: $gray-light;
   @media screen and (min-width: $screen-sm-min) {
-    padding: 0 0 ($grid-gutter-width * 4.5) 0;
+    padding-top: 0;
+    padding-bottom: ($grid-gutter-width * 4.5);
   }
 }
 

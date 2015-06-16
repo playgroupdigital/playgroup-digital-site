@@ -1,13 +1,16 @@
 .footer {
-  background: $brand-grey;
-  padding: ($grid-gutter-width * 4.5) 0 ($grid-gutter-width * 4.5) 0;
-  @media screen and (min-width: $screen-sm-min) {
-    padding: ($grid-gutter-width * 6) 0 ($grid-gutter-width * 4.5) 0;
-  }
+
 }
 
 .footer-text {
+  background: $brand-grey;
   color: $white;
+  padding-top: ($grid-gutter-width * 4.5);
+  padding-bottom:($grid-gutter-width * 4.5);
+  @media screen and (min-width: $screen-sm-min) {
+  padding-top: ($grid-gutter-width * 6);
+  padding-bottom:($grid-gutter-width * 6);
+  }
 }
 
 .footer-text a {
@@ -15,7 +18,17 @@
   text-decoration: $link-hover-underline;
 }
 
+.footer-text address {
+  margin-bottom:0px;
+  padding-bottom: ($grid-gutter-width * 1.5 - 2px);
+}
+
 .mailchimp-form {
+  padding-top: ($grid-gutter-width * 4.5);
+  @media screen and (min-width: $screen-sm-min) {
+   padding-top: 0;
+  }
+
 }
 .mailchimp-form input {
     border: 1px none;
@@ -51,4 +64,34 @@ input:-webkit-autofill {
 textarea, input { outline: none;
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+
+.footer-text--address {
+}
+
+.sub-footer {
+  background: $white;
+}
+
+.sub-footer--logo {
+padding: ($grid-gutter-width * 4.5) $grid-gutter-width ($grid-gutter-width * 4.5) $grid-gutter-width;
+  @media screen and (min-width: $screen-sm-min) {
+    padding: ($grid-gutter-width * 6) $grid-gutter-width ($grid-gutter-width * 6) $grid-gutter-width;
+  }
+}
+
+.sub-footer--link {
+    padding: ($grid-gutter-width * 4.5) 0 ($grid-gutter-width * 4.5) 0;
+  @media screen and (min-width: $screen-sm-min) {
+    padding: ($grid-gutter-width * 6) 0 ($grid-gutter-width * 6) 0;
+  }
+}
+
+.sub-footer--link p{
+  margin-bottom: 0;
+}
+.sub-footer--link a{
+  color: $gray;
+  text-decoration: $link-hover-underline;
 }

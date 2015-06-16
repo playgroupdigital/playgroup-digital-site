@@ -3,10 +3,12 @@
 }
 
 .block-section--heading {
-  padding: ($grid-gutter-width * 4.5) 0 ($grid-gutter-width * 3) 0;
+  padding-top: ($grid-gutter-width * 4.5);
+  padding-bottom:($grid-gutter-width * 3);
   color: $gray-light;
   @media screen and (min-width: $screen-sm-min) {
-    padding: ($grid-gutter-width * 9) 0 ($grid-gutter-width * 4.5) 0;
+    padding-top: ($grid-gutter-width * 9);
+    padding-bottom:($grid-gutter-width * 4.5);
   }
 }
 

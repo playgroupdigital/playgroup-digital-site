@@ -9,6 +9,8 @@
 
     <!-- Bootstrap -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,12 +20,13 @@
     <![endif]-->
 
    <script type="text/javascript" src="http://fast.fonts.net/jsapi/b946a5b1-e9c4-4bc0-9171-15b4ec28e3e9.js"></script>
+
   </head>
     <body role="document" class="home">
     <!-- Fixed navbar -->
 
 
-    <div class="container-fluid container-fluid--home max-width">
+    <div class="container-fluid container-fluid--home max-width" >
       <!-- Navbar -->
         <div class="row">
           <nav class="navbar navbar-inverse col-xs-16 col-xs-push-1">
@@ -38,7 +41,7 @@
               <a class="navbar-brand" href="#">Logo</a>
             </div>
 
-            <div id="navbar" class="navbar-collapse collapse  navbar-right ">
+            <div id="navbar" class="navbar-collapse collapse  navbar-right " >
               <ul class="nav navbar-nav">
                 <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
@@ -51,15 +54,18 @@
       <!-- /Navbar -->
 
         <!-- hero -->
-        <div class="jumbotron">
+        <section class="hero">
           <div class="row">
-            <div class=" col-xs-15 col-sm-14 col-md-10 col-xs-push-1">
-              <h1 class="h2">We’re a creative, brand focussed agency crafting <a href="">memorable digital experiences</a> that transform brands and captivate people.</h1>
+            <div class=" col-xs-15 col-sm-14 col-md-10 col-xs-push-1 hero-text">
+              <h1 class="h2">We’re a creative, brand focussed agency crafting <a href="#">memorable digital experiences</a> that transform brands and captivate people.</h1>
+              <a class="btn btn-primary home-btn" href="#" role="button"><span>Learn more about us</span></a>
             </div>
           </div>
-        </div>
+        </section>
       <!-- /hero -->
     </div>
+
+
     <!-- /container -->
 
     <!-- Latest from the studio white block -->
@@ -78,7 +84,10 @@
       <div class="container-fluid project">
           <div class="row project-block">
             <a href="#">
-              <img src="http://www.placecage.com/c/1600/823" alt="" class="img-responsive" >
+            <!-- this div gets the custom field inline background-->
+              <div>
+                <img src="http://www.placecage.com/c/1600/820" alt="" class="img-responsive">
+              </div>
               <div class="col-xs-16 col-xs-push-1 project-block--text" >
                 <h4>Descriptor of what we did for —</h4>
                 <h1>Client Name/Product Name</h1>
@@ -89,9 +98,12 @@
       <!-- /project -->
       <!-- project -->
       <div class="container-fluid project">
-          <div class="row project-block">
+          <div class="row project-block" >
             <a href="#">
-              <img src="http://www.placecage.com/c/1600/821" alt="" class="img-responsive" >
+            <!-- this div gets the custom field inline background-->
+            <div>
+              <img src="http://www.stevensegallery.com/1600/820" alt="" class="img-responsive" >
+            </div>
               <div class="col-xs-16 col-xs-push-1 project-block--text" >
                 <h4>Descriptor of what we did for —</h4>
                 <h1>Client Name/Product Name Quis aute iure reprehenderit in voluptate velit esse.</h1>
@@ -104,7 +116,10 @@
       <div class="container-fluid project">
           <div class="row project-block">
             <a href="#">
-              <img src="http://www.placecage.com/c/1600/822" alt="" class="img-responsive" >
+            <!-- this div gets the custom field inline background-->
+            <div>
+              <img src="http://www.fillmurray.com/1600/820" alt="" class="img-responsive" >
+            </div>
               <div class="col-xs-16 col-xs-push-1 project-block--text" >
                 <h4>Descriptor of what we did for with some extra words, pretty flexible! —</h4>
                 <h1>Client Name/Product Name</h1>
@@ -124,7 +139,7 @@
         </div>
       </div>
       <div class="row blog-section">
-        <div class="col-xs-16 col-xs-push-1 blog-section--text">
+        <div class="col-xs-16 col-xs-push-1 blog-section--text" >
           <a href="#">
             <h1>Blog title lorem ipsum</h1>
           </a>
@@ -164,18 +179,21 @@
       </div>
     </div>
 
-    <footer class="container-fluid footer">
+    <footer class="container-fluid footer wow">
       <div class="row footer-text">
         <div class="col-xs-16 col-xs-push-1 col-sm-4 footer-text--address">
           <address>
             Playgroup Digital  <br>
-            First floor, 12 Greenhill Rents <br>
-             London,  EC1M 6BN <br>
+            First floor <br>
+            12 Greenhill Rents <br>
+             London <br> 
+            EC1M 6BN
+            </address>
             <a href="#">info@playgroupdigital.com </a><br>
             <a href="tel:#">+44 (0) 20 7251 8096</a>
-          </address>
+
         </div>
-        <div class="col-xs-16 col-xs-push-1 col-sm-4 footer-text--address mailchimp-form">
+        <div class="col-xs-16 col-xs-push-1 col-sm-4  col-sm-push-2 footer-text--address mailchimp-form">
           <form action="//playgroup.us1.list-manage.com/subscribe/post?u=023203ff7770f58c466883713&amp;id=9eb90a74cd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
              <div id="mc_embed_signup_scroll">
               <p class="">Subscribe to our newsletter</p>
@@ -191,13 +209,23 @@
               <div class="clear">
                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
               </div>
+            </div>
           </form>
         </div>
-
-
-
-
+      </div>
+      <div class="row footer-text">
+        <div class="col-xs-16 col-xs-push-1 col-sm-4 footer-text--copyright">
+          <p>©Playgroupdigital 2015 </p>
         </div>
+      </div>
+      <div class="row sub-footer">
+      <div class="col-xs-2 col-xs-push-1 col-sm-2 sub-footer--logo">
+          <img src="img/playgroup-logo.svg" alt="" width="26" height="26">
+      </div>
+       <div class="col-xs-6 col-xs-push-9 col-sm-3 col-sm-push-12 sub-footer--link text-right">
+          <p>Part of <a href="http://playgroup.com">Playgroup</a></p>
+      </div>
+
       </div>
     </footer>
 
@@ -230,6 +258,18 @@
       });
     </script>
     <!-- /Smoothscroll, find better plugin later -->
-
+    <script src="js/wow.min.js"></script>
+      <script>
+         wow = new WOW(
+          {
+            boxClass:     'animate',      // default
+            animateClass: 'animated', // default
+            offset:       -50,          // default
+            mobile:       true,       // default
+            live:         true        // default
+          }
+        )
+        wow.init();
+      </script>
   </body>
 </html>

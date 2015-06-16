@@ -1069,7 +1069,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "AvenirNextLTW01-Medium", Helvetica, Arial, sans-serif;
+  font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #555555;
@@ -3200,16 +3200,16 @@ select[multiple].input-lg,
 .btn-primary {
   color: #fff;
   background-color: #0000ee;
-  border-color: #0000d4; }
+  border-color: #fff; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: #fff;
     background-color: #0000bb;
-    border-color: #000097; }
+    border-color: #e0e0e0; }
   .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     background-image: none; }
   .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
     background-color: #0000ee;
-    border-color: #0000d4; }
+    border-color: #fff; }
   .btn-primary .badge {
     color: #0000ee;
     background-color: #fff; }
@@ -3761,7 +3761,7 @@ tbody.collapse.in {
     .nav > li > a {
       position: relative;
       display: block;
-      padding: 10px 22px; }
+      padding: 10px 30px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: #eeeeee; }
@@ -5383,7 +5383,15 @@ a {
   opacity: 1.0;
   transition: all 0.25s ease-in-out;
   transform: translateZ(0);
-  font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif; }
+  font-family: "AvenirNextLTW01-Medium", Helvetica, Arial, sans-serif; }
+
+.navbar-inverse .navbar-collapse {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px; }
+  @media screen and (min-width: 768px) {
+    .navbar-inverse .navbar-collapse {
+      border-bottom: none;
+      padding-bottom: 0; } }
 
 .navbar-toggle {
   position: relative;
@@ -5409,6 +5417,14 @@ a {
     .navbar-toggle {
       display: none; } }
 
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0); }
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+  transform: rotate(0deg); }
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0); }
+
 .navbar-toggle {
   border: none;
   background: transparent !important; }
@@ -5425,13 +5441,6 @@ a {
   .navbar-toggle .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%; }
-
-.navbar-toggle.collapsed .top-bar {
-  transform: rotate(0); }
-.navbar-toggle.collapsed .middle-bar {
-  opacity: 1; }
-.navbar-toggle.collapsed .bottom-bar {
-  transform: rotate(0); }
 
 .navbar-nav li:first-child a:after {
   content: "↓";
@@ -5477,48 +5486,81 @@ a {
       clear: both; }
     .navbar-collapse.in {
       overflow-y: auto; } }
-.jumbotron {
-  padding: 30px 0 0 0;
-  margin-bottom: 30px;
+.hero {
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: #fff;
+  font-family: "AvenirNextLTW01-Medium", Helvetica, Arial, sans-serif;
   background-color: transparent; }
-  .jumbotron h1,
-  .jumbotron .h1 {
+  .hero h1,
+  .hero .h1 {
     color: #fff;
     font-size: 22px; }
-  .jumbotron p {
+  .hero p {
     margin-bottom: 15px;
     font-size: 24px;
     font-weight: 200; }
-  .jumbotron > hr {
+  .hero > hr {
     border-top-color: #0000bb; }
-  .jumbotron a {
+  .hero .hero-text a {
     color: #fff; }
   @media screen and (min-width: 768px) {
-    .jumbotron {
-      padding: 180px 0 90px 0; }
-      .container .jumbotron, .container-fluid .jumbotron {
+    .hero {
+      padding-top: 180px;
+      padding-bottom: 90px; }
+      .container .hero, .container-fluid .hero {
         padding-left: 0px;
         padding-right: 0px; }
-      .jumbotron h1,
-      .jumbotron .h1 {
+      .hero h1,
+      .hero .h1 {
         font-size: 37px; } }
   @media screen and (min-width: 992px) {
-    .jumbotron {
+    .hero {
       padding: 150px 0 90px 0; } }
   @media screen and (min-width: 1180px) {
-    .jumbotron {
+    .hero {
       padding: 210px 0 90px 0; } }
+
+.hero .home-btn {
+  margin-top: 40px;
+  padding: 15px;
+  transition: all 0.2s ease-in-out; }
+  @media screen and (min-width: 992px) {
+    .hero .home-btn {
+      margin-top: 60px;
+      padding: 20px; } }
+
+.hero-text a:not(.btn) {
+  color: #fff;
+  text-decoration: underline; }
+
+.hero .home-btn:hover {
+  background: #fff;
+  color: #0000ee; }
+
+.hero .home-btn span:after {
+  content: "→";
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
+  opacity: 1; }
+
+@media screen and (min-width: 768px) {
+  .hero a:hover span:after {
+    margin-left: 20px; } }
 
 .block-section {
   background: #fff; }
 
 .block-section--heading {
-  padding: 45px 0 30px 0;
+  padding-top: 45px;
+  padding-bottom: 30px;
   color: #9c9c9c; }
   @media screen and (min-width: 768px) {
     .block-section--heading {
-      padding: 90px 0 45px 0; } }
+      padding-top: 90px;
+      padding-bottom: 45px; } }
 
 .block-section--heading p {
   margin-bottom: 0; }
@@ -5537,7 +5579,8 @@ a {
       background: #42484D; } }
 
 .project-block--text {
-  padding: 30px 0 30px 0; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
   @media screen and (min-width: 768px) {
     .project-block--text {
       position: absolute;
@@ -5554,18 +5597,18 @@ a {
 .project-block--text h1 {
   display: inline;
   margin-top: 0;
-  font-family: "AvenirNextLTW01-Medium", Helvetica, Arial, sans-serif;
+  font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
   text-decoration: none;
-  border-bottom: 2px solid #42484D;
+  border-bottom: 1px solid #42484D;
   font-size: 16px; }
   @media screen and (min-width: 768px) {
     .project-block--text h1 {
-      border-bottom: 2px solid #fff;
-      font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
+      border-bottom: 3px solid #fff;
+      font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
       font-size: 37px; } }
   @media screen and (min-width: 992px) {
     .project-block--text h1 {
-      font-size: 50px; } }
+      font-size: 37px; } }
 
 .project-block--text h1:after {
   content: "→";
@@ -5582,12 +5625,13 @@ a {
 .project-block--text h4 {
   margin: 0 0 5px 0;
   font-size: 16px;
-  color: #9c9c9c; }
+  color: #9c9c9c;
+  line-height: 1.333; }
   @media screen and (min-width: 768px) {
     .project-block--text h4 {
       margin: 0 0 10px 0;
-      color: #fff;
-      font-size: 22px; } }
+      color: #eeeeee;
+      font-size: 29px; } }
 
 @media screen and (min-width: 768px) {
   .project-block img {
@@ -5600,35 +5644,41 @@ a {
 
 .blog-section {
   background: #fff;
-  padding-bottom: 45px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9; }
+  @media screen and (min-width: 768px) {
+    .blog-section {
+      padding-bottom: 45px; } }
 
 .blog-section--text {
-  padding: 0 0 30px 0;
+  padding-top: 0;
+  padding-bottom: 30px;
   color: #9c9c9c; }
   @media screen and (min-width: 768px) {
     .blog-section--text {
-      padding: 0 0 45px 0; } }
+      padding-bottom: 45px; } }
 
 .blog-section--text p {
   margin-bottom: 0; }
 
 .blog-section--text a {
-  margin-bottom: 10px;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 0; }
+  @media screen and (min-width: 768px) {
+    .blog-section--text a {
+      margin-bottom: 10px; } }
 
 .blog-section h1 {
   display: inline;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   color: #0000ee;
-  font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  border-bottom: 2px solid #0000ee;
-  font-size: 22px; }
+  font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
+  font-size: 16px; }
   @media screen and (min-width: 768px) {
     .blog-section h1 {
       font-size: 37px;
-      border-bottom: 3px solid #0000ee; } }
+      font-family: "AvenirNextLTW01-Medium", Helvetica, Arial, sans-serif;
+      margin: 0 0 20px 0; } }
 
 .blog-section h1:after {
   content: "→";
@@ -5656,10 +5706,11 @@ a {
 
 .twitter-block-section--heading {
   color: #42484D;
-  padding: 60px 0 45px 0; }
+  padding-top: 45px;
+  padding-bottom: 45px; }
   @media screen and (min-width: 768px) {
     .twitter-block-section--heading {
-      padding: 90px 0 45px 0; } }
+      padding-top: 90px; } }
 
 .twitter-block-section--heading h4 {
   margin-bottom: 0; }
@@ -5676,11 +5727,13 @@ a {
   padding-bottom: 45px; }
 
 .twitter-section--text {
-  padding: 0 0 25px 0;
+  padding-top: 0;
+  padding-bottom: 25px;
   color: #9c9c9c; }
   @media screen and (min-width: 768px) {
     .twitter-section--text {
-      padding: 0 0 45px 0; } }
+      padding-top: 0;
+      padding-bottom: 45px; } }
 
 .twitter-section--text p {
   margin-bottom: 15px; }
@@ -5694,19 +5747,29 @@ a {
 .twitter-section--text a {
   text-decoration: underline; }
 
-.footer {
-  background: #42484D;
-  padding: 45px 0 45px 0; }
-  @media screen and (min-width: 768px) {
-    .footer {
-      padding: 60px 0 45px 0; } }
-
 .footer-text {
-  color: #fff; }
+  background: #42484D;
+  color: #fff;
+  padding-top: 45px;
+  padding-bottom: 45px; }
+  @media screen and (min-width: 768px) {
+    .footer-text {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
 
 .footer-text a {
   color: #fff;
   text-decoration: underline; }
+
+.footer-text address {
+  margin-bottom: 0px;
+  padding-bottom: 13px; }
+
+.mailchimp-form {
+  padding-top: 45px; }
+  @media screen and (min-width: 768px) {
+    .mailchimp-form {
+      padding-top: 0; } }
 
 .mailchimp-form input {
   border: 1px none;
@@ -5737,6 +5800,28 @@ textarea, input {
   outline: none;
   -webkit-appearance: none;
   border-radius: 0; }
+
+.sub-footer {
+  background: #fff; }
+
+.sub-footer--logo {
+  padding: 45px 10px 45px 10px; }
+  @media screen and (min-width: 768px) {
+    .sub-footer--logo {
+      padding: 60px 10px 60px 10px; } }
+
+.sub-footer--link {
+  padding: 45px 0 45px 0; }
+  @media screen and (min-width: 768px) {
+    .sub-footer--link {
+      padding: 60px 0 60px 0; } }
+
+.sub-footer--link p {
+  margin-bottom: 0; }
+
+.sub-footer--link a {
+  color: #555555;
+  text-decoration: underline; }
 
 html {
   overflow-y: scroll; }

@@ -1,14 +1,18 @@
 .blog-section {
   background: $white;
-  padding-bottom: $grid-gutter-width *4.5;
+  padding-bottom: $grid-gutter-width * 3;
+  @media screen and (min-width: $screen-sm-min) {
+    padding-bottom:($grid-gutter-width * 4.5);
+  }
   border-bottom: $border-bottom-divide $gray-light-border;
 }
 
 .blog-section--text {
-  padding: 0 0 ($grid-gutter-width * 3) 0;
+  padding-top: 0;
+  padding-bottom:($grid-gutter-width * 3);
   color: $gray-light;
   @media screen and (min-width: $screen-sm-min) {
-     padding: 0 0 ($grid-gutter-width * 4.5) 0;
+    padding-bottom:($grid-gutter-width * 4.5);
   }
 }
 
@@ -17,22 +21,28 @@
 }
 
 .blog-section--text a {
-  margin-bottom: $grid-gutter-width;
   display: inline-block;
+  margin-bottom: 0;
+  @media screen and (min-width: $screen-sm-min) {
+  margin-bottom: $grid-gutter-width;
+  }
+
 }
 
 
 .blog-section h1{
   display: inline;
-  margin: 0 0 $grid-gutter-width * 2 0;
+  margin: 0 0 $grid-gutter-width 0;
   color: $brand-primary;
-  font-family: $font-family-sans-serif-demi;
-  text-decoration: $link-hover-decoration;
-  border-bottom: $border-bottom-heading $brand-primary;
-  font-size: $font-size-h4;
+  font-family: $font-family-sans-serif;
+  //text-decoration: $link-hover-underline;
+  //border-bottom: $border-bottom-heading $brand-primary;
+  font-size: $font-size-base;
     @media screen and (min-width: $screen-sm-min) {
+      //border-bottom: $border-bottom-heading-lg $brand-primary;
       font-size: $font-size-h2;
-      border-bottom: $border-bottom-heading-lg $brand-primary;
+      font-family: $font-family-sans-serif-demi;
+      margin: 0 0 $grid-gutter-width * 2 0;
     }
     @media screen and (min-width: $screen-md-min) {
 
