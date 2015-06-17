@@ -4144,8 +4144,8 @@ tbody.collapse.in {
     .navbar-right ~ .navbar-right {
       margin-right: 0; } }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7; }
+  background-color: #fff;
+  border-color: none; }
   .navbar-default .navbar-brand {
     color: #0000ee; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -4160,7 +4160,7 @@ tbody.collapse.in {
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #0000ee;
-    background-color: #e7e7e7; }
+    background-color: #eeeeee; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
     background-color: transparent; }
@@ -4172,9 +4172,9 @@ tbody.collapse.in {
       background-color: #888; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
-    border-color: #e7e7e7; }
+    border-color: none; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #e7e7e7;
+    background-color: #eeeeee;
     color: #0000ee; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -4184,7 +4184,7 @@ tbody.collapse.in {
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
       color: #0000ee;
-      background-color: #e7e7e7; }
+      background-color: #eeeeee; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #ccc;
       background-color: transparent; } }
@@ -5341,7 +5341,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 .container-fluid {
-  max-width: 1350px; }
+  max-width: 1270px; }
 
 html, body, input, textarea, select, button {
   -webkit-font-smoothing: antialiased;
@@ -5362,12 +5362,18 @@ a {
 .container-fluid--home {
   background-color: #0000ee; }
 
+.container-fluid--page {
+  background-color: #fff;
+  border-bottom: #d9d9d9 1px solid; }
+
 .navbar-brand {
   float: left;
   padding: 38px 0px;
   font-size: 22px;
   line-height: 24px;
-  height: 100px; }
+  height: 100px;
+  width: 125px;
+  margin-top: -12.5px; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
   .navbar-brand > img {
@@ -5444,7 +5450,6 @@ a {
 
 .navbar-nav li:first-child a:after {
   content: "↓";
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-weight: normal;
   transition: all 0.25s ease-in-out;
   opacity: 1;
@@ -5490,12 +5495,12 @@ a {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
-  font-family: "AvenirNextLTW01-Medium", Helvetica, Arial, sans-serif;
   background-color: transparent; }
   .hero h1,
   .hero .h1 {
     color: #fff;
-    font-size: 22px; }
+    font-size: 22px;
+    font-family: "Avenir Next W01 Light", Helvetica, Arial, sans-serif; }
   .hero p {
     margin-bottom: 15px;
     font-size: 24px;
@@ -5521,42 +5526,48 @@ a {
     .hero {
       padding: 210px 0 90px 0; } }
 
+.hero-text a:not(.btn) {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #fff 50%, #fff 75%);
+  background-size: 2px 1px;
+  background-position: 0px 24px;
+  background-repeat: repeat-x; }
+  @media screen and (min-width: 768px) {
+    .hero-text a:not(.btn) {
+      background-image: linear-gradient(to bottom, #fff 50%, #fff 100%);
+      background-position: 0px 39px; } }
+
 .hero .home-btn {
   margin-top: 40px;
   padding: 15px;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease; }
   @media screen and (min-width: 992px) {
     .hero .home-btn {
       margin-top: 60px;
       padding: 20px; } }
 
-.hero-text a:not(.btn) {
-  color: #fff;
-  text-decoration: underline; }
-
 .hero .home-btn:hover {
-  background: #fff;
-  color: #0000ee; }
+  background: #0000ee; }
 
 .hero .home-btn span:after {
   content: "→";
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-weight: normal;
-  transition: all 0.2s ease-in-out;
-  margin-left: 10px;
-  opacity: 1; }
+  transition: all 0.3s ease;
+  margin-left: -10px;
+  opacity: 0; }
 
 @media screen and (min-width: 768px) {
   .hero a:hover span:after {
-    margin-left: 20px; } }
+    margin-left: 10px;
+    opacity: 1; } }
 
 .block-section {
   background: #fff; }
 
 .block-section--heading {
   padding-top: 45px;
-  padding-bottom: 30px;
-  color: #9c9c9c; }
+  padding-bottom: 30px; }
   @media screen and (min-width: 768px) {
     .block-section--heading {
       padding-top: 90px;
@@ -5564,13 +5575,26 @@ a {
 
 .block-section--heading p {
   margin-bottom: 0; }
+  @media screen and (min-width: 768px) {
+    .block-section--heading p {
+      color: #42484D;
+      font-size: 22px; } }
+
+.page-section--heading {
+  padding-top: 45px;
+  padding-bottom: 30px; }
+  @media screen and (min-width: 768px) {
+    .page-section--heading {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
 
 .home-projects {
   margin-bottom: 30px; }
 
 .project {
   position: relative;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+  overflow: hidden; }
 
 .project-block {
   background: #fff; }
@@ -5578,49 +5602,46 @@ a {
     .project-block {
       background: #42484D; } }
 
+@media screen and (min-width: 768px) {
+  .project-block img {
+    opacity: 0.9;
+    transition: all 0.25s ease-in-out; } }
+
+@media screen and (min-width: 768px) {
+  .project-block a:hover img {
+    opacity: 0.25; } }
+
 .project-block--text {
   padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  transition: all 0.3s ease; }
   @media screen and (min-width: 768px) {
     .project-block--text {
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 5%;
       z-index: 1; } }
-
-.project-block--text, .project-block--text h1 {
-  color: #555555; }
-  @media screen and (min-width: 768px) {
-    .project-block--text, .project-block--text h1 {
-      color: #fff; } }
 
 .project-block--text h1 {
   display: inline;
   margin-top: 0;
   font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #555555;
   text-decoration: none;
-  border-bottom: 1px solid #42484D;
-  font-size: 16px; }
+  background-image: linear-gradient(to bottom, #555555 50%, #fff 75%);
+  background-size: 2px 2px;
+  background-position: 0px 16px;
+  background-repeat: repeat-x; }
   @media screen and (min-width: 768px) {
     .project-block--text h1 {
-      border-bottom: 3px solid #fff;
-      font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
-      font-size: 37px; } }
+      text-decoration: none;
+      background: none;
+      font-family: "Avenir Next W01 Light", Helvetica, Arial, sans-serif;
+      font-size: 37px;
+      color: #fff; } }
   @media screen and (min-width: 992px) {
     .project-block--text h1 {
       font-size: 37px; } }
-
-.project-block--text h1:after {
-  content: "→";
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-weight: normal;
-  transition: all 0.25s ease-in-out;
-  margin-left: 10px;
-  opacity: 1; }
-
-@media screen and (min-width: 768px) {
-  .project-block a:hover h1:after {
-    margin-left: 30px; } }
 
 .project-block--text h4 {
   margin: 0 0 5px 0;
@@ -5631,16 +5652,35 @@ a {
     .project-block--text h4 {
       margin: 0 0 10px 0;
       color: #eeeeee;
-      font-size: 29px; } }
+      font-size: 22px; } }
+
+.project-block--link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  color: #fff; }
+  @media screen and (min-width: 768px) {
+    .project-block--link {
+      position: absolute;
+      bottom: 0%;
+      z-index: 1; } }
 
 @media screen and (min-width: 768px) {
-  .project-block img {
-    opacity: 0.5;
-    transition: all 0.25s ease-in-out; } }
+  .project-block a:hover .project-block--link {
+    bottom: 2.5%;
+    opacity: 1; } }
+
+.project-block--link h4:after {
+  content: "→";
+  font-weight: normal;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  opacity: 1; }
 
 @media screen and (min-width: 768px) {
-  .project-block a:hover img {
-    opacity: 0.25; } }
+  .project-block a:hover h1:after {
+    margin-left: 30px; } }
 
 .blog-section {
   background: #fff;
@@ -5662,7 +5702,7 @@ a {
   margin-bottom: 0; }
 
 .blog-section--text a {
-  display: inline-block;
+  display: inline;
   margin-bottom: 0; }
   @media screen and (min-width: 768px) {
     .blog-section--text a {
@@ -5672,27 +5712,48 @@ a {
   display: inline;
   margin: 0 0 10px 0;
   color: #0000ee;
-  font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #0000ee 50%, #fff 75%);
+  background-size: 2px 2px;
+  background-position: 0px 18px;
+  background-repeat: repeat-x;
   font-size: 16px; }
   @media screen and (min-width: 768px) {
     .blog-section h1 {
-      font-size: 37px;
-      font-family: "AvenirNextLTW01-Medium", Helvetica, Arial, sans-serif;
+      background-image: linear-gradient(to bottom, #0000ee 50%, #fff 100%);
+      background-position: 0px 31px;
+      font-size: 29px;
+      font-family: "Avenir Next W01 Light", Helvetica, Arial, sans-serif;
       margin: 0 0 20px 0; } }
+  @media screen and (min-width: 992px) {
+    .blog-section h1 {
+      font-size: 37px;
+      background-position: 0px 39px; } }
 
-.blog-section h1:after {
+@media screen and (min-width: 992px) {
+  .blog-section a:after {
+    content: "→";
+    color: #9c9c9c;
+    font-size: 37px;
+    float: right;
+    margin-right: 10px;
+    opacity: 1;
+    transition: all 0.2s ease; } }
+
+@media screen and (min-width: 768px) {
+  .blog-section a:hover:after {
+    margin-right: 0; } }
+
+.project-block--link h4:after {
   content: "→";
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-weight: normal;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.3s ease;
   margin-left: 10px;
   opacity: 1; }
 
-.blog-section a:hover h1:after {
-  margin-left: 20px; }
-  @media screen and (min-width: 768px) {
-    .blog-section a:hover h1:after {
-      margin-left: 20px; } }
+@media screen and (min-width: 768px) {
+  .project-block a:hover h1:after {
+    margin-left: 30px; } }
 
 .blog-section h4 {
   margin: 0 0 10px 0;
@@ -5744,8 +5805,15 @@ a {
     .twitter-section--text p + p {
       font-size: 18px; } }
 
-.twitter-section--text a {
-  text-decoration: underline; }
+.twitter-section a {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #0000ee 50%, #fff 75%);
+  background-size: 2px 2px;
+  background-position: 0px 16px;
+  background-repeat: repeat-x; }
+  @media screen and (min-width: 768px) {
+    .twitter-section a {
+      background-position: 0px 20px; } }
 
 .footer-text {
   background: #42484D;
@@ -5759,7 +5827,14 @@ a {
 
 .footer-text a {
   color: #fff;
-  text-decoration: underline; }
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #fff 50%, #42484D 75%);
+  background-size: 2px 2px;
+  background-position: 0px 18px;
+  background-repeat: repeat-x; }
+  @media screen and (min-width: 768px) {
+    .footer-text a {
+      background-image: linear-gradient(to bottom, #fff 50%, #42484D 75%); } }
 
 .footer-text address {
   margin-bottom: 0px;
@@ -5787,11 +5862,18 @@ a {
 .mailchimp-form input[type="submit"] {
   background: #42484D;
   display: block;
-  padding-left: 0;
+  padding: 0;
   color: #fff;
-  text-decoration: underline;
   text-align: left;
-  clear: both; }
+  clear: both;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #fff 50%, #42484D 75%);
+  background-size: 2px 2px;
+  background-position: 0px 22px;
+  background-repeat: repeat-x; }
+  @media screen and (min-width: 768px) {
+    .mailchimp-form input[type="submit"] {
+      background-image: linear-gradient(to bottom, #fff 50%, #42484D 75%); } }
 
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset; }
@@ -5821,7 +5903,11 @@ textarea, input {
 
 .sub-footer--link a {
   color: #555555;
-  text-decoration: underline; }
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #555555 50%, #fff 75%);
+  background-size: 2px 2px;
+  background-position: 0px 18px;
+  background-repeat: repeat-x; }
 
 html {
   overflow-y: scroll; }

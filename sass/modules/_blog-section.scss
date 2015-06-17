@@ -21,47 +21,71 @@
 }
 
 .blog-section--text a {
-  display: inline-block;
+  display: inline;
   margin-bottom: 0;
   @media screen and (min-width: $screen-sm-min) {
   margin-bottom: $grid-gutter-width;
   }
-
 }
-
 
 .blog-section h1{
   display: inline;
   margin: 0 0 $grid-gutter-width 0;
   color: $brand-primary;
-  font-family: $font-family-sans-serif;
+
   //text-decoration: $link-hover-underline;
   //border-bottom: $border-bottom-heading $brand-primary;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, $brand-primary 50%, $white 75%);
+  background-size: 2px 2px;
+  background-position: 0px ($font-size-base + 2px);
+  background-repeat: repeat-x;
   font-size: $font-size-base;
-    @media screen and (min-width: $screen-sm-min) {
-      //border-bottom: $border-bottom-heading-lg $brand-primary;
-      font-size: $font-size-h2;
-      font-family: $font-family-sans-serif-demi;
-      margin: 0 0 $grid-gutter-width * 2 0;
-    }
-    @media screen and (min-width: $screen-md-min) {
-
-    }
+  @media screen and (min-width: $screen-sm-min) {
+    background-image: linear-gradient(to bottom, $brand-primary 50%, $white 100%);
+    background-position: 0px ($font-size-h3 + 2px);
+    font-size: $font-size-h3;
+    font-family: $font-family-sans-serif-light;
+    margin: 0 0 $grid-gutter-width * 2 0;
+  }
+  @media screen and (min-width: $screen-md-min) {
+    font-size: $font-size-h2;
+    background-position: 0px ($font-size-h2 + 2px);
+  }
 }
-.blog-section h1:after {
+
+  .blog-section a:after{
+    @media screen and (min-width: $screen-md-min) {
+    content: "→";
+    color:$gray-light;
+    font-size: $font-size-h2;
+    float: right;
+    margin-right: $grid-gutter-width;
+    opacity: 1;
+    transition: all 0.2s ease;
+    }
+  }
+
+    .blog-section a:hover:after{
+    @media screen and (min-width: $screen-sm-min) {
+      margin-right: 0
+    }
+  }
+
+
+  .project-block--link h4:after {
   content: "→";
-  font-family: $font-family-monospace;
   font-weight: normal;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.3s ease;
   margin-left: $grid-gutter-width;
   opacity: 1;
 }
-.blog-section a:hover h1:after {
-  margin-left: ($grid-gutter-width * 2);
+.project-block a:hover h1:after {
   @media screen and (min-width: $screen-sm-min) {
-    margin-left: ($grid-gutter-width * 2);
-    }
+    margin-left: ($grid-gutter-width * 3);
+  }
 }
+
 .blog-section h4 {
   margin: 0 0 $grid-gutter-width 0;
   font-size: $font-size-base;
@@ -69,4 +93,5 @@
     font-size: $font-size-h4;
   }
 }
+
 

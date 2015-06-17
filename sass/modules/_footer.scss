@@ -15,7 +15,14 @@
 
 .footer-text a {
   color: $white;
-  text-decoration: $link-hover-underline;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, $white 50%, $brand-grey 75%);
+  background-size: 2px 2px;
+  background-position: 0px ($font-size-base + 2px);
+  background-repeat: repeat-x;
+  @media screen and (min-width: $screen-sm-min) {
+    background-image: linear-gradient(to bottom, $white 50%, $brand-grey 75%);
+  }
 }
 
 .footer-text address {
@@ -48,11 +55,18 @@
 .mailchimp-form input[type="submit"] {
   background: $brand-grey;
   display: block;
-  padding-left: 0;
+  padding: 0;
   color: $white;
-  text-decoration: $link-hover-underline;
   text-align: left;
   clear: both;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, $white 50%, $brand-grey 75%);
+  background-size: 2px 2px;
+  background-position: 0px 22px;
+  background-repeat: repeat-x;
+  @media screen and (min-width: $screen-sm-min) {
+    background-image: linear-gradient(to bottom, $white 50%, $brand-grey 75%);
+  }
 }
 
 .mailchimp-form input[type="submit"]:hover {
@@ -93,5 +107,11 @@ padding: ($grid-gutter-width * 4.5) $grid-gutter-width ($grid-gutter-width * 4.5
 }
 .sub-footer--link a{
   color: $gray;
-  text-decoration: $link-hover-underline;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, $gray 50%, $white 75%);
+  background-size: 2px 2px;
+  background-position: 0px ($font-size-base + 2px);
+  background-repeat: repeat-x;
+  @media screen and (min-width: $screen-sm-min) {
+  }
 }
