@@ -23,9 +23,25 @@
 
   </head>
     <body role="document" class="home">
+
+    <div class="contact" style="display: block;">
+        <div class="container-fluid container-fluid--contact max-width">
+          <div class="row contact-row">
+          <div class="col-xs-16 col-xs-push-1">
+            <p>A communi observantia non est recedendum. Me non paenitet nullum festiviorem excogitasse ad hoc. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Etiam habebis sem dicantur magna mollis euismod. Unam incolunt Belgae, aliam Aquitani, tertiam.
+Ab illo tempore, ab est sed immemorabili. Quis aute iure reprehenderit in voluptate velit esse. Mercedem aut nummos unde unde extricat, amaras. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh.</p>
+          </div>
+          </div>
+          <div class="row contact-row">
+          <div class="col-xs-2 col-xs-push-1">
+            <a class="contact-close" href="#">✕</a>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
     <!-- Fixed navbar -->
-
-
     <div class="container-fluid container-fluid--home max-width" >
       <!-- Navbar -->
         <div class="row">
@@ -43,12 +59,12 @@
               </a>
             </div>
 
-            <div id="navbar" class="navbar-collapse collapse  navbar-right " >
-              <ul class="nav navbar-nav">
+            <div id="navbar" class="navbar-collapse collapse " >
+              <ul class="nav navbar-nav navbar-right">
                 <li><a href="#work">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse" class="contact-toggle">Contact</a></li>
                </ul>
             </div><!--/.nav-collapse -->
         </nav>
@@ -275,6 +291,7 @@
       });
     </script>
     <!-- /Smoothscroll, find better plugin later -->
+    <script src="js/scripts.js"></script>
     <script src="js/wow.min.js"></script>
       <script>
          wow = new WOW(

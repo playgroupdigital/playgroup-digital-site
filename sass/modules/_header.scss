@@ -1,3 +1,27 @@
+.container-fluid--contact {
+  background-color: $brand-grey;
+  color: $white;
+  padding-top: ($grid-gutter-width * 4.5);
+  padding-bottom:($grid-gutter-width * 4.5);
+  //border-bottom: $gray-light-border 1px solid;
+
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top: ($grid-gutter-width * 6);
+    padding-bottom:($grid-gutter-width * 6);
+  }
+}
+
+.contact-row {
+
+}
+
+.container-fluid--contact a {
+  color: $white;
+}
+
+.contact-close {
+  font-size: $font-size-h3;
+}
 
 .container-fluid--home {
   background-color: $brand-primary;
@@ -6,8 +30,6 @@
   background-color: $white;
   border-bottom: $gray-light-border 1px solid;
 }
-
-
 // Navbar Brand/project name
 
 .navbar-brand {

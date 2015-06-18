@@ -5359,6 +5359,22 @@ a {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
 
+.container-fluid--contact {
+  background-color: #42484D;
+  color: #fff;
+  padding-top: 45px;
+  padding-bottom: 45px; }
+  @media screen and (min-width: 768px) {
+    .container-fluid--contact {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+
+.container-fluid--contact a {
+  color: #fff; }
+
+.contact-close {
+  font-size: 29px; }
+
 .container-fluid--home {
   background-color: #0000ee; }
 
