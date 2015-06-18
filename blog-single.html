@@ -22,9 +22,9 @@
    <script type="text/javascript" src="http://fast.fonts.net/jsapi/b946a5b1-e9c4-4bc0-9171-15b4ec28e3e9.js"></script>
 
   </head>
-    <body role="document" class="home">
+    <body role="document">
 
-  <div class="contact" style="display: block;">
+  <div class="contact">
         <div class="container-fluid container-fluid--contact max-width">
           <div class="row contact-row">
           <div class="col-xs-16 col-xs-push-1">
@@ -147,11 +147,13 @@ Ab illo tempore, ab est sed immemorabili. Quis aute iure reprehenderit in volupt
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/scripts.js"></script>
+    <script src="js/packery.pkgd.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
     <!-- Smoothscroll, find better plugin later -->
     <script>
       $(function() {
@@ -170,7 +172,20 @@ Ab illo tempore, ab est sed immemorabili. Quis aute iure reprehenderit in volupt
       });
     </script>
     <!-- /Smoothscroll, find better plugin later -->
-    <script src="js/scripts.js"></script>
+
+
+  <script>
+    var $container = $('#container').imagesLoaded( function() {
+      // initialize Packery after all images have loaded
+      $container.packery({
+        itemSelector: '.blog-item',
+      gutter: 0
+      });
+    });
+  </script>
+
+
+
     <script src="js/wow.min.js"></script>
       <script>
          wow = new WOW(
