@@ -41,7 +41,7 @@ Ab illo tempore, ab est sed immemorabili. Quis aute iure reprehenderit in volupt
         </div>
       </div>
 
-    <!-- Fixed navbar -->
+    <!-- Navbar -->
     <div class="container-fluid container-fluid--home max-width" >
       <!-- Navbar -->
         <div class="row">
@@ -291,6 +291,16 @@ Ab illo tempore, ab est sed immemorabili. Quis aute iure reprehenderit in volupt
       });
     </script>
     <!-- /Smoothscroll, find better plugin later -->
+
+    <script src="js/packery.pkgd.js"></script>
+    <script>
+    var $container = $('#container');
+      // init
+        $container.packery({
+        itemSelector: '.item',
+        gutter: 10
+    });
+    </script>
     <script src="js/scripts.js"></script>
     <script src="js/wow.min.js"></script>
       <script>

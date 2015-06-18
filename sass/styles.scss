@@ -1,5 +1,6 @@
 // Import Variables
 @import "base/variables";
+@import "base/mixins";
 
 // Import Bootstrap for Sass
 @import "vendor/bootstrap";
@@ -10,16 +11,18 @@
 // Import Type Styles
 @import "base/typography";
 
+html {
+  overflow-y: scroll;
+}
+body{ overflow-x: hidden;}
 // Import Module Styles
 @import "modules/header";
 @import "modules/block-section";
 @import "modules/project-block";
-@import "modules/blog-section";
+@import "modules/blog-section--home";
 @import "modules/twitter-section";
 @import "modules/footer";
+@import "modules/blog-listing--singlepost";
 
 
 
-html {
-  overflow-y: scroll;
-}

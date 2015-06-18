@@ -4,6 +4,7 @@
   padding-top: ($grid-gutter-width * 4.5);
   padding-bottom:($grid-gutter-width * 4.5);
   //border-bottom: $gray-light-border 1px solid;
+  //border: 1px solid transparent;
 
   @media screen and (min-width: $screen-sm-min) {
     padding-top: ($grid-gutter-width * 6);
@@ -303,13 +304,10 @@
     color: $white;
     //text-decoration: $link-hover-underline;
     text-decoration: none;
-    background-image: linear-gradient(to bottom, $white 50%, $white 75%);
-    background-size: 2px 1px;
-    background-position: 0px ($font-size-h4 + 2px);
-    background-repeat: repeat-x;
+    @include link-underline-base($white, $white);
+    @include link-underline-position($font-size-h4);
     @media screen and (min-width: $screen-sm-min) {
-      background-image: linear-gradient(to bottom, $white 50%, $white 100%);
-      background-position: 0px ($font-size-h2 + 2px);
+      @include link-underline-position($font-size-h2);
   }
 }
 

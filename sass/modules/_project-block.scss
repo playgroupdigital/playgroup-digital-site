@@ -55,11 +55,8 @@
   font-family: $font-family-sans-serif;
   font-size: $font-size-base;
   color: $text-color;
-  text-decoration: none;
-  background-image: linear-gradient(to bottom, $gray 50%, $white 75%);
-  background-size: 2px 2px;
-  background-position: 0px 16px;
-  background-repeat: repeat-x;
+  @include link-underline-base($gray , $white);
+  @include link-underline-position($font-size-base);
     @media screen and (min-width: $screen-sm-min) {
     text-decoration: none;
     background: none;

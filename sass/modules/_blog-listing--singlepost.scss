@@ -1,0 +1,33 @@
+.container-fluid--bloglist {
+  //max-width: $max-width + ($grid-gutter-width * 2);
+}
+
+body{ overflow: hidden;}
+
+.no-gutter{
+    margin-left: - $grid-gutter-width;
+    margin-right: - $grid-gutter-width;
+  @media screen and (min-width: $screen-sm-min) {
+    margin-left: - $grid-gutter-width;
+    margin-right: - $grid-gutter-width;
+  }
+}
+
+.item {
+  @media screen and (min-width: $screen-sm-min) {
+    margin-top: $grid-gutter-width;
+  }
+
+}
+
+.item-wrap {
+  background: $white;
+  padding-top: ($grid-gutter-width * 4.5);
+  padding-bottom:($grid-gutter-width * 4.5);
+  margin-left: 0;
+  margin-right: 0;
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top: ($grid-gutter-width * 6);
+    padding-bottom:($grid-gutter-width * 6);
+  }
+}

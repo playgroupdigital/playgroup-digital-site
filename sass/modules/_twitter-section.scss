@@ -47,13 +47,9 @@ float: left;
 }
 
 .twitter-section  a {
-    text-decoration: none;
-    background-image: linear-gradient(to bottom, $brand-primary 50%, $white 75%);
-    background-size: 2px 2px;
-    background-position: 0px 16px;
-    background-repeat: repeat-x;
+  @include link-underline-base($brand-primary , $white);
+  @include link-underline-position($font-size-base);
   @media screen and (min-width: $screen-sm-min) {
-    background-position: 0px ($font-size-base*1.125)+2px;
   }
 }
 

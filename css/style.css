@@ -5359,6 +5359,12 @@ a {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
 
+html {
+  overflow-y: scroll; }
+
+body {
+  overflow-x: hidden; }
+
 .container-fluid--contact {
   background-color: #42484D;
   color: #fff;
@@ -5545,13 +5551,13 @@ a {
 .hero-text a:not(.btn) {
   color: #fff;
   text-decoration: none;
+  text-decoration: none;
   background-image: linear-gradient(to bottom, #fff 50%, #fff 75%);
   background-size: 2px 1px;
-  background-position: 0px 24px;
-  background-repeat: repeat-x; }
+  background-repeat: repeat-x;
+  background-position: 0px 24px; }
   @media screen and (min-width: 768px) {
     .hero-text a:not(.btn) {
-      background-image: linear-gradient(to bottom, #fff 50%, #fff 100%);
       background-position: 0px 39px; } }
 
 .hero .home-btn {
@@ -5645,9 +5651,9 @@ a {
   color: #555555;
   text-decoration: none;
   background-image: linear-gradient(to bottom, #555555 50%, #fff 75%);
-  background-size: 2px 2px;
-  background-position: 0px 16px;
-  background-repeat: repeat-x; }
+  background-size: 2px 1px;
+  background-repeat: repeat-x;
+  background-position: 0px 18px; }
   @media screen and (min-width: 768px) {
     .project-block--text h1 {
       text-decoration: none;
@@ -5728,15 +5734,14 @@ a {
   display: inline;
   margin: 0 0 10px 0;
   color: #0000ee;
+  font-size: 16px;
   text-decoration: none;
   background-image: linear-gradient(to bottom, #0000ee 50%, #fff 75%);
-  background-size: 2px 2px;
-  background-position: 0px 18px;
+  background-size: 2px 1px;
   background-repeat: repeat-x;
-  font-size: 16px; }
+  background-position: 0px 18px; }
   @media screen and (min-width: 768px) {
     .blog-section h1 {
-      background-image: linear-gradient(to bottom, #0000ee 50%, #fff 100%);
       background-position: 0px 31px;
       font-size: 29px;
       font-family: "Avenir Next W01 Light", Helvetica, Arial, sans-serif;
@@ -5824,12 +5829,9 @@ a {
 .twitter-section a {
   text-decoration: none;
   background-image: linear-gradient(to bottom, #0000ee 50%, #fff 75%);
-  background-size: 2px 2px;
-  background-position: 0px 16px;
-  background-repeat: repeat-x; }
-  @media screen and (min-width: 768px) {
-    .twitter-section a {
-      background-position: 0px 20px; } }
+  background-size: 2px 1px;
+  background-repeat: repeat-x;
+  background-position: 0px 18px; }
 
 .footer-text {
   background: #42484D;
@@ -5844,13 +5846,11 @@ a {
 .footer-text a {
   color: #fff;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, #fff 50%, #42484D 75%);
-  background-size: 2px 2px;
-  background-position: 0px 18px;
-  background-repeat: repeat-x; }
-  @media screen and (min-width: 768px) {
-    .footer-text a {
-      background-image: linear-gradient(to bottom, #fff 50%, #42484D 75%); } }
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #fff 50%, #fff 75%);
+  background-size: 2px 1px;
+  background-repeat: repeat-x;
+  background-position: 0px 18px; }
 
 .footer-text address {
   margin-bottom: 0px;
@@ -5884,12 +5884,9 @@ a {
   clear: both;
   text-decoration: none;
   background-image: linear-gradient(to bottom, #fff 50%, #42484D 75%);
-  background-size: 2px 2px;
-  background-position: 0px 22px;
-  background-repeat: repeat-x; }
-  @media screen and (min-width: 768px) {
-    .mailchimp-form input[type="submit"] {
-      background-image: linear-gradient(to bottom, #fff 50%, #42484D 75%); } }
+  background-size: 2px 1px;
+  background-repeat: repeat-x;
+  background-position: 0px 20px; }
 
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset; }
@@ -5920,12 +5917,35 @@ textarea, input {
 .sub-footer--link a {
   color: #555555;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, #555555 50%, #fff 75%);
-  background-size: 2px 2px;
-  background-position: 0px 18px;
-  background-repeat: repeat-x; }
+  background-image: linear-gradient(to bottom, #9c9c9c 50%, #fff 75%);
+  background-size: 2px 1px;
+  background-repeat: repeat-x;
+  background-position: 0px 18px; }
 
-html {
-  overflow-y: scroll; }
+body {
+  overflow: hidden; }
+
+.no-gutter {
+  margin-left: -10px;
+  margin-right: -10px; }
+  @media screen and (min-width: 768px) {
+    .no-gutter {
+      margin-left: -10px;
+      margin-right: -10px; } }
+
+@media screen and (min-width: 768px) {
+  .item {
+    margin-top: 10px; } }
+
+.item-wrap {
+  background: #fff;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  margin-left: 0;
+  margin-right: 0; }
+  @media screen and (min-width: 768px) {
+    .item-wrap {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
