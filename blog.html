@@ -87,7 +87,7 @@ Ab illo tempore, ab est sed immemorabili. Quis aute iure reprehenderit in volupt
 
 
 <div  class="container-fluid container-fluid--bloglist" >
-  <div class=" no-gutter" id="container">
+  <div class="packery no-gutter" id="container">
 
 
 
@@ -300,7 +300,7 @@ Ab illo tempore, ab est sed immemorabili. Quis aute iure reprehenderit in volupt
 
 
   <script>
-    var $container = $('#container').imagesLoaded( function() {
+    var $container = $('.packery').imagesLoaded( function() {
       // initialize Packery after all images have loaded
       $container.packery({
         itemSelector: '.blog-item',
