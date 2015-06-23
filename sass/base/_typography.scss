@@ -5,10 +5,6 @@ html, body, input, textarea, select, button {
 }
 
 
-
-
-
-
 // Links
 
 a {
@@ -24,4 +20,35 @@ a {
   &:focus {
     @include tab-focus;
   }
+}
+
+
+h1 {
+  font-family: $font-family-sans-serif-demi;
+  color: $brand-primary;
+}
+
+
+
+// Blockquotes
+
+blockquote {
+  padding: 0 $line-height-computed;
+  margin: ($grid-gutter-width * 6) 0 ($grid-gutter-width * 6);
+  font-size: $blockquote-font-size;
+  border-left: 1px solid $blockquote-border-color;
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+strong {
+  font-family: $font-family-sans-serif-demi;
+  font-weight: normal;
+
 }

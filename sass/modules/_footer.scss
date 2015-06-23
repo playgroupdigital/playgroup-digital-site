@@ -16,7 +16,7 @@
 .footer-text a {
   color: $white;
   text-decoration: none;
-  @include link-underline-base($white, $white);
+  @include link-underline-base($white, $brand-grey);
   @include link-underline-position($font-size-base);
   @media screen and (min-width: $screen-sm-min) {
   }
