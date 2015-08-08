@@ -7,7 +7,7 @@
 .block-section--heading {
   padding-top: ($grid-gutter-width * 4.5);
   padding-bottom:($grid-gutter-width * 3);
-
+  font-size: $font-size-h4;
   @media screen and (min-width: $screen-sm-min) {
     padding-top: ($grid-gutter-width * 9);
     padding-bottom:($grid-gutter-width * 4.5);
@@ -16,9 +16,10 @@
 
 .block-section--heading p {
   margin-bottom: 0;
+  font-size: $font-size-base;
   @media screen and (min-width: $screen-sm-min) {
     color: $brand-grey;
-    font-size: $font-size-h4;
+
   }
 }
 

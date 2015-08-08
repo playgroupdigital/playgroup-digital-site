@@ -3,7 +3,7 @@
 @mixin link-underline-base ($color1:$brand-primary, $color2:$white) {
   text-decoration: none;
   background-image: linear-gradient(to bottom, $color1 50%, $color2 75%);
-  background-size: 2px 1px;
+  background-size: 2px 2px;
   background-repeat: repeat-x;
 }
 @mixin link-underline-position ($font-size:$font-size-base) {

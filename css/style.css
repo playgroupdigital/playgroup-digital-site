@@ -1069,7 +1069,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
+  font-family: "AvenirNextLTW01-Regular", Helvetica Neue, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #555555;
@@ -5360,7 +5360,7 @@ a {
     outline-offset: -2px; }
 
 h1 {
-  font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
   color: #0000ee; }
 
 blockquote {
@@ -5374,7 +5374,7 @@ blockquote {
     margin-bottom: 0; }
 
 strong {
-  font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
   font-weight: normal; }
 
 html {
@@ -5433,7 +5433,7 @@ body {
   opacity: 1.0;
   transition: all 0.25s ease-in-out;
   transform: translateZ(0);
-  font-family: "AvenirNextLTW01-Medium", Helvetica, Arial, sans-serif; }
+  font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif; }
 
 .navbar-inverse .navbar-collapse {
   border-bottom: 1px solid #fff;
@@ -5563,7 +5563,7 @@ body {
   .hero .h1 {
     color: #fff;
     font-size: 22px;
-    font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif; }
+    font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif; }
   .hero p {
     margin-bottom: 15px;
     font-size: 24px;
@@ -5742,7 +5742,7 @@ body {
 .project-block--text h1 {
   display: inline;
   margin-top: 0;
-  font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
   font-size: 16px;
   color: #555555;
   text-decoration: none;
@@ -6048,7 +6048,7 @@ textarea, input {
 
 .blog-item--wrap h3 {
   margin-top: 0;
-  font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
   padding-bottom: 10px; }
 
 .blog-item--wrap h3 a {
@@ -6417,14 +6417,12 @@ textarea, input {
 
 .project-content--block.banner {
   color: #fff;
-  font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
   background: #0000ee;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-top: 30px; }
   @media screen and (min-width: 768px) {
     .project-content--block.banner {
-      padding-top: 60px;
-      padding-bottom: 60px; } }
+      padding-top: 60px; } }
 
 .project-content--block.banner h3 {
   font-size: 22px;

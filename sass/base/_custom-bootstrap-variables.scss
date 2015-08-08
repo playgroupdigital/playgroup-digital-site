@@ -36,7 +36,7 @@
    $text-color:            $gray;
 
 //** Global textual link color.
-   $link-color:            $brand-primary;
+   $link-color:            $brand-grey;
 //** Link hover color set via `darken()` function.
    $link-hover-color:      $link-color;
 //** Link hover decoration.
@@ -56,7 +56,7 @@
 
    $font-size-base:          16px;
    $font-size-large:         ceil(($font-size-base * 1.33)); // ~21.328px
-   $font-size-small:         ceil(($font-size-base * 0.75)); // ~12px
+   $font-size-small:         ceil(($font-size-base * 0.87)); // ~14px
 
    $font-size-h1:            floor(($font-size-base * 3.157)); // ~50.512px
    $font-size-h2:            floor(($font-size-base * 2.369)); // ~37.904px
@@ -72,7 +72,7 @@
 
 //** By default, this inherits from the `<body>`.
 // $headings-font-family:    inherit
-   $headings-font-weight:    500;
+   $headings-font-weight:    300;
 // $headings-line-height:    1.1
 // $headings-color:          inherit
 
@@ -376,7 +376,7 @@
 // Navbar links
    $navbar-default-link-color:                $brand-primary;
    $navbar-default-link-hover-color:          $brand-primary;
-// $navbar-default-link-hover-bg:             transparent
+   $navbar-default-link-hover-bg:             transparent;
    $navbar-default-link-active-color:         $brand-primary;
 // $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%)
 // $navbar-default-link-disabled-color:       #ccc

@@ -14,7 +14,7 @@
 
   }
   @media screen and (min-width: $screen-md-min) {
-    font-size: $font-size-h1;
+    //font-size: $font-size-h1;
   }
 }
 
@@ -53,10 +53,12 @@
   }
 }
 
-.project-info h5 {
+.project-info h4 {
   color: $gray-light;
   margin: 0;
-  padding-bottom:($grid-gutter-width * 1)
+  padding-bottom:($grid-gutter-width * 1);
+  font-family: $font-family-sans-serif-demi;
+  font-size: $font-size-base;
 }
 .project-info p {
   color: $white;
@@ -76,7 +78,6 @@
 }
 
 .project-info .project-info--btn {
-
   padding: ($grid-gutter-width * 1.5);
   transition: all 0.2s ease;
   background: $brand-grey;
@@ -108,6 +109,10 @@
   @media screen and (min-width: $screen-sm-min) {
   margin-bottom:($grid-gutter-width * 3);
   }
+}
+.project-content h4 {
+  font-family: $font-family-sans-serif-demi;
+  font-size: $font-size-base;
 }
 
 .project-content--block {
@@ -212,11 +217,8 @@
   font-family: $font-family-sans-serif-demi;
   background: $brand-primary;
   padding-top:($grid-gutter-width * 3);
-  padding-bottom:($grid-gutter-width * 3);
-  //border: 1px solid red;
   @media screen and (min-width: $screen-sm-min) {
   padding-top:($grid-gutter-width * 6);
-  padding-bottom:($grid-gutter-width * 6);
   }
 }
 

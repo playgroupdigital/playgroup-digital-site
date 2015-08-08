@@ -16,14 +16,15 @@
   }
 }
 
-.project-block img {
+.home-project--image {
+  width:100%;
   @media screen and (min-width: $screen-sm-min) {
     opacity: 0.75;
     transition: all 0.25s ease-in-out;
   }
 }
 
-.project-block a:hover img {
+.project-block a:hover .home-project--image {
   @media screen and (min-width: $screen-sm-min) {
     opacity: 0.05;
   }
@@ -54,29 +55,33 @@
   font-family: $font-family-sans-serif-demi;
   font-size: $font-size-base;
   color: $text-color;
-  @include link-underline-base($gray , $white);
+  @include link-underline-base($brand-primary , $white);
   @include link-underline-position($font-size-base);
     @media screen and (min-width: $screen-sm-min) {
     text-decoration: none;
     background: none;
-    //font-family: $font-family-sans-serif-light;
-    font-size: $font-size-h2;
+    font-size: $font-size-h4;
     color: $white;
+    @include link-underline-base($white , transparent);
+  @include link-underline-position($font-size-h4);
     }
     @media screen and (min-width: $screen-md-min) {
-      font-size: $font-size-h2;
+      font-size: $font-size-h3;
+          @include link-underline-base($white , transparent);
+  @include link-underline-position($font-size-h3);
+
     }
 }
 
-.project-block--text h4 {
+.project-block h4 {
   margin: 0 0 (ceil($grid-gutter-width/2)) 0;
   font-size: $font-size-base;
   color: $gray-light;
   line-height: 1.333;
   @media screen and (min-width: $screen-sm-min) {
-    margin: 0 0 $grid-gutter-width 0;
+    margin: 0 0 ($grid-gutter-width/2) 0;
     color: $white;
-    font-size: $font-size-h4;
+    //font-size: $font-size-h4;
   }
 }
 .project-block--link {
@@ -87,6 +92,8 @@
   color: $white;
 
 
+
+
   @media screen and (min-width: $screen-sm-min) {
     position: absolute;
     bottom: 0%;
@@ -94,11 +101,22 @@
   }
 }
 
+
 .project-block a:hover .project-block--link  {
   @media screen and (min-width: $screen-sm-min) {
     bottom: 2.5%;
     opacity: 1;
   }
+}
+
+.colour-mask {
+  position: relative;
+   transition: all 0.3s ease;
+   opacity: 0;
+}
+
+.project-block a:hover .colour-mask{
+  opacity: 0.75;
 }
 
 .project-block--link h4:after {

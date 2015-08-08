@@ -8,7 +8,7 @@
     <title>Playgroup Digital</title>
 
     <!-- Bootstrap -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
 
 
@@ -72,15 +72,16 @@
       </div>
       <!-- /Navbar -->
 
+<div class="container-fluid container-fluid--home" >
         <!-- hero -->
-        <section class="hero">
-          <div class="row">
+          <div class="row hero">
             <div class=" col-xs-15 col-sm-14 col-md-10 col-xs-push-1 hero-text">
-              <h1 class="h2">We’re a creative, brand focussed agency crafting <a href="#">memorable digital experiences</a> that transform brands and captivate people.</h1>
+              <h1>Digital experiences that captivate and transform.</h1>
               <a class="btn btn-primary home-btn" href="about.html" role="button"><span>Learn more about us</span></a>
             </div>
           </div>
-        </section>
+      </div>
+
       <!-- /hero -->
     </div>
 
@@ -99,13 +100,13 @@
 
     <!-- Projects wrapper -->
     <section class="home-projects">
+
       <!-- project -->
       <div class="container-fluid project">
+       <!-- this div gets the custom field inline background-->
           <div class="row project-block">
             <a href="work-single.html">
-            <!-- this div gets the custom field inline background-->
-              <div>
-                <img src="http://www.placecage.com/c/1270/715" alt="" class="img-responsive">
+              <div style="background: url('https://www.unsplash.it/1270/300'); background-size:cover; padding-bottom:60%;" class="home-project--image">
               </div>
               <div class="col-xs-16 col-xs-push-1 project-block--text" >
                 <h4>Client —</h4>
@@ -119,13 +120,12 @@
       </div>
       <!-- /project -->
 
-       <!-- project -->
+            <!-- project -->
       <div class="container-fluid project">
+       <!-- this div gets the custom field inline background-->
           <div class="row project-block">
             <a href="work-single.html">
-            <!-- this div gets the custom field inline background-->
-              <div>
-                <img src="http://www.stevensegallery.com/1270/715" alt="" class="img-responsive">
+              <div style="background: url('https://www.unsplash.it/1270/800'); background-size:cover; padding-bottom:60%;" class="home-project--image">
               </div>
               <div class="col-xs-16 col-xs-push-1 project-block--text" >
                 <h4>Client —</h4>
@@ -138,13 +138,12 @@
         </div>
       </div>
       <!-- /project -->
-       <!-- project -->
+          <!-- project -->
       <div class="container-fluid project">
+       <!-- this div gets the custom field inline background-->
           <div class="row project-block">
             <a href="work-single.html">
-            <!-- this div gets the custom field inline background-->
-              <div>
-                <img src="http://www.fillmurray.com/1270/715" alt="" class="img-responsive">
+              <div style="background: url('https://www.unsplash.it/1370/700'); background-size:cover; padding-bottom:60%;" class="home-project--image">
               </div>
               <div class="col-xs-16 col-xs-push-1 project-block--text" >
                 <h4>Client —</h4>
@@ -157,8 +156,13 @@
         </div>
       </div>
       <!-- /project -->
+
     </section>
     <!-- /Projects wrapper -->
+
+
+
+
 
     <!-- Latest from the blog white block -->
     <div class="container-fluid">
@@ -277,6 +281,7 @@
     <script src="js/scripts.js"></script>
     <script src="js/packery.pkgd.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jquery.simple-text-rotator.js"></script>
 
     <!-- Smoothscroll, find better plugin later -->
     <script>
@@ -297,16 +302,6 @@
     </script>
     <!-- /Smoothscroll, find better plugin later -->
 
-
-  <script>
-    var $container = $('#container').imagesLoaded( function() {
-      // initialize Packery after all images have loaded
-      $container.packery({
-        itemSelector: '.blog-item',
-      gutter: 0
-      });
-    });
-  </script>
 
 
     <script src="js/wow.min.js"></script>

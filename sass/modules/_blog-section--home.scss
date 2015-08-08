@@ -31,18 +31,18 @@
 .blog-section h1{
   display: inline;
   margin: 0 0 $grid-gutter-width 0;
-  color: $brand-primary;
+  color: $brand-grey;
   font-size: $font-size-base;
   @include link-underline-base($brand-primary , $white);
   @include link-underline-position($font-size-base);
   @media screen and (min-width: $screen-sm-min) {
-    @include link-underline-position($font-size-h3);
-    font-size: $font-size-h3;
+    @include link-underline-position($font-size-h4);
+    font-size: $font-size-h4;
     margin: 0 0 $grid-gutter-width * 2 0;
   }
   @media screen and (min-width: $screen-md-min) {
-    font-size: $font-size-h2;
-    @include link-underline-position($font-size-h2);
+    font-size: $font-size-h3;
+    @include link-underline-position($font-size-h3);
   }
 }
 

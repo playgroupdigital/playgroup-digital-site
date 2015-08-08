@@ -232,7 +232,8 @@
   > li {
     > a {
       padding: $nav-link-padding-small;
-       }
+  -webkit-backface-visibility: hidden;
+             }
     }
   }
 }
@@ -283,7 +284,7 @@
   .h1 {
     color: $jumbotron-heading-color;
     font-size: $font-size-h4;
-    font-family: $font-family-sans-serif-demi;
+    font-family: $font-family-sans-serif;
   }
 
   p {

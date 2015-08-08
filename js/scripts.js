@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
-    //Hide stuffs
+    //Hide stuff
+       $('.contact').hide();
 
-    $('.contact').hide();
+
 
     // Contact expando/collapso
 
@@ -11,16 +12,14 @@ $(document).ready(function() {
         return false;
     });
 
-    // Contact close
 
-    $('.contact a.contact-close').click(function() {
+
+    // Contact close
+    $('a.contact-close').click(function() {
         $('.contact').slideUp(500);
         return false;
     });
 
-     $('.nav a').on('click', function(){
-    $(".navbar-toggle").click()
-    });
 
 
 

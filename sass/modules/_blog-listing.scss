@@ -41,20 +41,24 @@
 .blog-item--wrap h3 {
     margin-top: 0;
     font-family: $font-family-sans-serif-demi;
+    line-height: 0.9;
     padding-bottom:($grid-gutter-width * 1);
+    @media screen and (min-width: $screen-sm-min){
+      line-height: 1.1;
+  }
 
 }
 .blog-item--wrap h3 a {
-  font-size: $font-size-h4;
+  font-size: $font-size-base;
 @include link-underline-base($brand-primary, $white);
-@include link-underline-position($font-size-h4);
+@include link-underline-position($font-size-base);
   @media screen and (min-width: $screen-sm-min) {
   font-size: $font-size-h4;
 @include link-underline-position($font-size-h4);
   }
   @media screen and (min-width: $screen-md-min) {
   font-size: $font-size-h3;
-@include link-underline-position($font-size-h3);
+  @include link-underline-position($font-size-h3);
   }
 }
 
