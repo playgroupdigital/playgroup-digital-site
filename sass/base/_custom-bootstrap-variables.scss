@@ -11,7 +11,7 @@
 
    $gray-base:              #000;
 // $gray-darker:            lighten($gray-base, 13.5%) // #222
-// $gray-dark:              lighten($gray-base, 20%)   // #333
+   $gray-dark:              lighten($gray-base, 20%);   // #333
    $gray:                   lighten($gray-base, 33.5%); // #555
    $gray-light:             lighten($gray-base, 61); // #9c9c9c
    $gray-light-border:      lighten($gray-base, 85); // #d9d9d9
@@ -33,10 +33,10 @@
 //** Background color for `<body>`.
    $body-bg:               #f0f0f0;
 //** Global text color on `<body>`.
-   $text-color:            $gray;
+   $text-color:            $gray-dark;
 
 //** Global textual link color.
-   $link-color:            $brand-grey;
+   $link-color:             $gray-dark;
 //** Link hover color set via `darken()` function.
    $link-hover-color:      $link-color;
 //** Link hover decoration.

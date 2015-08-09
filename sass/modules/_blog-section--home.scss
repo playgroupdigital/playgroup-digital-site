@@ -31,7 +31,7 @@
 .blog-section h1{
   display: inline;
   margin: 0 0 $grid-gutter-width 0;
-  color: $brand-grey;
+  color:  $gray-dark;
   font-size: $font-size-base;
   @include link-underline-base($brand-primary , $white);
   @include link-underline-position($font-size-base);

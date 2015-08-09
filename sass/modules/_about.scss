@@ -41,3 +41,92 @@
     @media screen and (min-width: $screen-md-min) {
     }
 }
+
+.about-section {
+    background:$white;
+    padding-top: ($grid-gutter-width * 3);
+    padding-bottom:($grid-gutter-width * 3);
+    @media screen and (min-width: $screen-sm-min) {
+  }
+}
+
+.two-col-text{
+    padding-top: ($grid-gutter-width * 3);
+    padding-bottom:($grid-gutter-width * 3);
+    @media screen and (min-width: $screen-sm-min) {
+        padding-top: ($grid-gutter-width * 6);
+        padding-bottom:($grid-gutter-width * 6);
+  }
+
+}
+.about-section .two-col-text+.two-col-text {
+    border-top: 1px solid $gray-light-border;
+}
+
+.two-col-text--heading {
+}
+.two-col-text--heading h5{
+        margin-top: 0;
+    color: $gray-dark;
+    font-family: $font-family-sans-serif-demi;
+}
+.two-col-text--heading p{
+    color: $gray-light;
+}
+
+.two-col-text--body {
+}
+
+.about-banner {
+    background: #1b1b26;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+
+}
+
+.about-banner--image {
+    background-position: center !important;
+    background-size: cover !important;
+    opacity: 0.25;
+    padding-bottom: 100%;
+    @include greyscale;
+    @media screen and (min-width: $screen-sm-min) {
+    padding-bottom: 25%;
+    }
+}
+
+.about-banner--text {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+
+.about-banner--text p {
+    font-size: $font-size-h3;
+    margin-bottom: ($grid-gutter-width * 1.5);
+}
+
+
+
+.about-banner--text .about-banner--btn {
+    background: transparent;
+    padding: ($grid-gutter-width * 1.5);
+    transition: all 0.2s ease;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+
+  @media screen and (min-width: $screen-md-min) {
+    padding: ($grid-gutter-width * 2) ($grid-gutter-width * 3);
+  }
+}
+.about-banner--btn:hover {
+    background: rgba(0,0, 0, 0.5);
+}
+
