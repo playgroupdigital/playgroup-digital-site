@@ -102,31 +102,47 @@
     color: $white;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-45%);
+    text-align: center;
 
 
 }
 
 .about-banner--text p {
     font-size: $font-size-h3;
-    margin-bottom: ($grid-gutter-width * 1.5);
+    margin-bottom: ($grid-gutter-width * 3);
+
 }
 
 
 
 .about-banner--text .about-banner--btn {
     background: transparent;
-    padding: ($grid-gutter-width * 1.5);
+    padding: ($grid-gutter-width * 1.5) ($grid-gutter-width * 1.5);
     transition: all 0.2s ease;
-    display: block;
-    margin: 0 auto;
-    width: 200px;
+    @media screen and (min-width: $screen-md-min) {
 
-  @media screen and (min-width: $screen-md-min) {
-    padding: ($grid-gutter-width * 2) ($grid-gutter-width * 3);
   }
 }
 .about-banner--btn:hover {
-    background: rgba(0,0, 0, 0.5);
+    @media screen and (min-width: $screen-md-min) {
+    padding: ($grid-gutter-width * 1.5) ($grid-gutter-width * 2);
+  }
+
 }
 
+.about-banner--btn:after {
+ content: "→";
+  //font-family: $font-family-monospace;
+  font-weight: normal;
+  transition: all 0.3s ease;
+  margin-left: -($grid-gutter-width);
+  opacity: 0;
+}
+.about-banner--btn:hover:after {
+  @media screen and (min-width: $screen-sm-min) {
+    margin-left: $grid-gutter-width;
+    opacity: 1;
+  }
+
+}

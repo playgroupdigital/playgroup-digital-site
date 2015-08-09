@@ -9059,34 +9059,44 @@ textarea, input {
   color: #fff;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-45%);
+      -ms-transform: translateY(-45%);
+          transform: translateY(-45%);
+  text-align: center;
 }
 
 .about-banner--text p {
   font-size: 29px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .about-banner--text .about-banner--btn {
   background: transparent;
-  padding: 15px;
+  padding: 15px 15px;
   -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease;
-  display: block;
-  margin: 0 auto;
-  width: 200px;
 }
 
 @media screen and (min-width: 992px) {
-  .about-banner--text .about-banner--btn {
-    padding: 20px 30px;
+  .about-banner--btn:hover {
+    padding: 15px 20px;
   }
 }
 
-.about-banner--btn:hover {
-  background: rgba(0, 0, 0, 0.5);
+.about-banner--btn:after {
+  content: "→";
+  font-weight: normal;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  margin-left: -10px;
+  opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about-banner--btn:hover:after {
+    margin-left: 10px;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
