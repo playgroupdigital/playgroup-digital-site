@@ -7907,14 +7907,19 @@ body {
   }
 }
 
+.blog-home {
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .blog-section {
   background: #fff;
+  padding-top: 45px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 @media screen and (min-width: 768px) {
   .blog-section {
+    padding-top: 90px;
     padding-bottom: 45px;
   }
 }

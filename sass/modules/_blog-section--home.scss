@@ -1,11 +1,18 @@
+.blog-home {
+   border-bottom: $border-bottom-divide $gray-light-border;
+}
+
 .blog-section {
   background: $white;
+  padding-top: ($grid-gutter-width * 4.5);
   padding-bottom: $grid-gutter-width * 3;
-  border-bottom: $border-bottom-divide $gray-light-border;
+
   @media screen and (min-width: $screen-sm-min) {
+    padding-top: ($grid-gutter-width * 9);
     padding-bottom:($grid-gutter-width * 4.5);
   }
 }
+
 
 .blog-section--text {
   padding-top: 0;
