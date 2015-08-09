@@ -50,9 +50,15 @@
   }
 }
 
+.about-section h5{
+        margin-top: 0;
+        color: $gray-dark;
+        font-family: $font-family-sans-serif-demi;
+}
+
 .two-col-text{
-    padding-top: ($grid-gutter-width * 3);
-    padding-bottom:($grid-gutter-width * 3);
+    padding-top: ($grid-gutter-width * 4.5);
+    padding-bottom:($grid-gutter-width * 4.5);
     @media screen and (min-width: $screen-sm-min) {
         padding-top: ($grid-gutter-width * 6);
         padding-bottom:($grid-gutter-width * 6);
@@ -65,11 +71,7 @@
 
 .two-col-text--heading {
 }
-.two-col-text--heading h5{
-        margin-top: 0;
-    color: $gray-dark;
-    font-family: $font-family-sans-serif-demi;
-}
+
 .two-col-text--heading p{
     color: $gray-light;
 }
@@ -83,8 +85,6 @@
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
-
-
 }
 
 .about-banner--image {
@@ -145,4 +145,108 @@
     opacity: 1;
   }
 
+}
+
+
+.about-section--capabilities {
+    padding-top: ($grid-gutter-width * 3);
+    padding-bottom:($grid-gutter-width * 3);
+    @media screen and (min-width: $screen-sm-min) {
+        padding-top: ($grid-gutter-width * 6);
+        padding-bottom:($grid-gutter-width * 6);
+  }
+}
+
+.capabilities-title {
+    @media screen and (max-width: $screen-sm-min) {
+        padding-bottom: ($grid-gutter-width * 6);
+  }
+}
+
+.about-section--capabilities .capabilities-text+.capabilities-text {
+       @media screen and (max-width: $screen-md-min) {
+        padding-top: ($grid-gutter-width * 3);
+  }
+}
+
+.about-section--capabilities .capabilities-text:last-child {
+      @media screen and (min-width: $screen-md-min) {
+        padding-top: ($grid-gutter-width * 6);
+  }
+}
+
+.about-instagram {
+    background:$white;
+}
+
+.half-wrap {
+    background: $brand-primary;
+    width: 50%;
+    float: left;
+}
+
+.about-instagram-half {
+    background-position: center !important;
+    background-size: cover !important;
+    padding-bottom: 100%;
+    @include greyscale;
+    @media screen and (min-width: $screen-sm-min) {
+    }
+
+}
+
+
+.about-instagram-half {
+    transition: all 1s ease;
+    opacity: 0.25;
+}
+
+.about-instagram-half:hover {
+    opacity: 0.1;
+}
+
+
+.about-instagram-quarter {
+    width: 25%;
+    float: left;
+    background-position: center !important;
+    background-size: cover !important;
+    padding-bottom: 25%;
+}
+
+.about-section--people {
+    padding-top: ($grid-gutter-width * 3);
+    padding-bottom:($grid-gutter-width * 3);
+    @media screen and (min-width: $screen-sm-min) {
+        padding-top: ($grid-gutter-width * 6);
+        padding-bottom:($grid-gutter-width * 6);
+  }
+
+}
+
+
+.people-profile {
+    @include greyscale;
+    padding-bottom:($grid-gutter-width * 3);
+    @media screen and (min-width: $screen-sm-min) {
+        padding-bottom:($grid-gutter-width * 4.5);
+    }
+
+}
+
+.people-title {
+    @media screen and (max-width: $screen-sm-min) {
+        padding-bottom: ($grid-gutter-width * 6);
+  }
+}
+
+.people-profile--image {
+    background-position: center !important;
+    background-size: cover !important;
+    padding-bottom: 60%;
+    margin-bottom:($grid-gutter-width * 1.5);
+}
+
+.people-profile h5 {
+    margin-bottom: 0;
 }
