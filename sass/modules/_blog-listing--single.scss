@@ -2,84 +2,66 @@
   background: $white;
 }
 
-
-.blog-single--heading {
-  padding-top: ($grid-gutter-width * 4.5);
-  padding-bottom:($grid-gutter-width * 3);
-  @media screen and (min-width: $screen-sm-min) {
-    padding-top: ($grid-gutter-width * 6);
-    padding-bottom:($grid-gutter-width * 0);
-  }
+.blog-single--featured {
+  background-position: center !important;
+  background-size: cover !important;
+  padding-bottom: 40%;
 }
 
+
+.blog-single--heading {
+  padding-top: ($grid-gutter-width * 4);
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top: ($grid-gutter-width * 6);
+  }
+}
 
 .blog-single--heading h1 {
   font-size: $font-size-base;
   margin: 0;
   @media screen and (min-width: $screen-sm-min) {
-    font-size: $font-size-h3;
+    font-size: $font-size-h4;
 
   }
   @media screen and (min-width: $screen-md-min) {
-    //font-size: $font-size-h1;
+    font-size: $font-size-h3;
   }
 }
+
 
 .blog-single--meta  {
-  padding-bottom:($grid-gutter-width * 3);
+
+  padding-top:($grid-gutter-width * 2);
   @media screen and (min-width: $screen-sm-min) {
   padding-top:($grid-gutter-width * 2);
-  padding-bottom:($grid-gutter-width * 6);
+
   }
 }
-
 .blog-single--meta p {
-    margin-bottom: 0px;
-}
-.blog-single--meta p:first-child {
+  font-size: $font-size-small;
+  color: $gray-light;
+  margin-bottom: ($grid-gutter-width /2);
   float: left;
+  @media screen and (min-width: $screen-sm-min) {
+  float: none;
+  }
 }
 
 .blog-single--meta p+p {
-  float: right;
+float: right;
+@media screen and (min-width: $screen-sm-min) {
+  float: none;
+  }
 }
 
 .blog-single--meta a {
   @include link-underline-base($brand-primary , $white);
-  @include link-underline-position($font-size-base);
-}
-
-
-.blog-single--meta-2  {
-  padding-bottom:($grid-gutter-width * 3);
-  @media screen and (min-width: $screen-sm-min) {
-  padding-top:($grid-gutter-width * 2);
-  padding-bottom:($grid-gutter-width * 0);
-  }
-}
-.blog-single--meta-2 p {
-  font-size: $font-size-small;
-  color: $gray-light;
-  margin-bottom: ($grid-gutter-width /2);
-
-}
-
-
-.blog-single--meta-2 a {
-  @include link-underline-base($brand-primary , $white);
   @include link-underline-position($font-size-small);
 }
 
+
 .blog-single--content {
-  padding-bottom:($grid-gutter-width * 3);
-  @media screen and (min-width: $screen-sm-min) {
-    padding-bottom:($grid-gutter-width * 4.5);
-
-  }
-}
-
-.blog-single--content-2 {
- padding-top: ($grid-gutter-width * 4.5);
+ padding-top: ($grid-gutter-width * 1);
   padding-bottom:($grid-gutter-width * 3);
   @media screen and (min-width: $screen-sm-min) {
     padding-top: ($grid-gutter-width * 6);
@@ -87,22 +69,15 @@
   }
 }
 
-.blog-single--content p {
-  @media screen and (min-width: $screen-sm-min) {
-    margin-right:  15%;
-  }
-   @media screen and (min-width: $screen-md-min) {
-    margin-right:  25%;
-  }
-}
 
-.blog-single--content h4, .blog-single--content-2 h4 {
+
+.blog-single--content h4 {
   font-family:$font-family-sans-serif-demi;
   font-size: $font-size-base;
   color: $brand-grey;
 }
 
-.blog-single--content img, .blog-single--content-2 img {
+.blog-single--content img {
   padding-top: ($grid-gutter-width * 3);
   padding-bottom:($grid-gutter-width * 3);
 
@@ -110,17 +85,14 @@
   }
 }
 
-.blog-single--content p+h4, .blog-single--content-2 p+h4 {
+.blog-single--content p+h4 {
   padding-top: ($grid-gutter-width * 3);
 }
 
 .blog-single--content blockquote {
-
-
 }
 
 .blog-single--nav {
-
   @media screen and (min-width: $screen-sm-min) {
     margin-bottom: ($grid-gutter-width * 3);
   }
@@ -141,7 +113,7 @@
 
 
 
-.blog-single--content p a, .blog-single--content-2 p a{
+.blog-single--content p a{
   @include link-underline-base($brand-primary, $white);
   @include link-underline-position($font-size-base);
   color: $gray;
@@ -152,7 +124,7 @@
   @include link-underline-position($font-size-base);
 }
 
-.blog-single--content blockquote a, .blog-single--content-2 blockquote a {
+.blog-single--content blockquote a {
   @include link-underline-base($brand-primary, $white);
   @include link-underline-position($blockquote-font-size);
 

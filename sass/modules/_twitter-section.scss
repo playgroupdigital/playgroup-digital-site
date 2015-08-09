@@ -50,6 +50,7 @@ float: left;
   @include link-underline-base($brand-primary , $white);
   @include link-underline-position($font-size-base);
   @media screen and (min-width: $screen-sm-min) {
+    @include link-underline-position($font-size-base*1.125);
   }
 }
 

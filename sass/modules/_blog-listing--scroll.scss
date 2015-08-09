@@ -3,23 +3,29 @@
 }
 
 .blog-entry--list {
-
 }
 
 .blog-entry--single {
-margin: 0 0 ($grid-gutter-width * 4.5) 0;
+margin: 0 0 ($grid-gutter-width * 3) 0;
+
+@media screen and (min-width: $screen-sm-min) {
+  margin: 0 0 ($grid-gutter-width * 6) 0;
+  }
 
 }
 
 .blog-entry--title {
-
 }
 
 .blog-entry--image {
   background-position: center;
+  background-size: cover !important;
+  padding-bottom: 60%;
+  //border-top: ($grid-gutter-width / 2) solid $brand-primary;
+
 }
 .blog-entry--excerpt{
-  min-height: 150px;
+  min-height: 160px;
   //border-bottom: 1px solid $gray-light;
 
 }
@@ -32,16 +38,22 @@ margin: 0 0 ($grid-gutter-width * 4.5) 0;
   @include link-underline-position($font-size-base);
 }
 
-.blog-entry--title h2, .blog-entry--single h2{
+.blog-entry--single h2{
    // color: #3a3a3a;
     font-size: $font-size-base;
     font-family: $font-family-sans-serif-demi;
-    margin: ($grid-gutter-width * 3) 0 ($grid-gutter-width * 3) 0;
+    margin: ($grid-gutter-width * 3) 0 ($grid-gutter-width * 2) 0;
+    @media screen and (min-width: $screen-sm-min) {
+    font-size: $font-size-h4;
+  }
 }
 
-.blog-entry--title h2 a, .blog-entry--single h2 a {
+.blog-entry--single h2 a {
   @include link-underline-base($brand-primary , $white);
   @include link-underline-position($font-size-base);
+  @media screen and (min-width: $screen-sm-min) {
+    @include link-underline-position($font-size-h4);
+  }
 }
 
 

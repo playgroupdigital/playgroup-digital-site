@@ -1,5 +1,5 @@
 .footer {
-
+  font-size: $font-size-small;
 }
 
 .footer-text {
@@ -80,6 +80,7 @@ textarea, input { outline: none;
 
 .sub-footer {
   background: $white;
+  font-size: $font-size-base;
 }
 
 .sub-footer--logo {
@@ -101,7 +102,7 @@ padding: ($grid-gutter-width * 4.5) $grid-gutter-width ($grid-gutter-width * 4.5
 }
 .sub-footer--link a{
   color: $gray;
-  @include link-underline-base($gray-light, $white);
+  @include link-underline-base($brand-primary, $white);
   @include link-underline-position($font-size-base);
   @media screen and (min-width: $screen-sm-min) {
   }
