@@ -1,0 +1,83 @@
+.home-header {
+    background: $brand-primary;
+    position: relative;
+
+}
+
+.container-header {
+    background: $white;
+}
+
+
+.home-header--image {
+    background-position: center !important;
+    background-size: cover !important;
+    opacity: 0.25;
+    padding-bottom: 100%;
+    @include greyscale;
+    @media screen and (min-width: $screen-sm-min) {
+    padding-bottom: 40%;
+    }
+}
+
+
+
+.home-header--text {
+    color: $white;
+    position: absolute;
+    bottom:10%;
+}
+
+.home-header--text h1{
+    color: $white;
+    font-size: $font-size-h3;
+    font-family: $font-family-sans-serif;
+    margin-bottom:  ($grid-gutter-width / 2);
+    @media screen and (min-width: $screen-sm-min) {
+        //font-size: $font-size-h3;
+    }
+    @media screen and (min-width: $screen-md-min) {
+        font-size: $font-size-h2;
+    }
+}
+
+.home-header--text p{
+    color: $white;
+     @media screen and (min-width: $screen-sm-min) {
+        font-size: $font-size-h4;
+        line-height: 1.35;
+    }
+    @media screen and (min-width: $screen-md-min) {
+    }
+}
+
+
+.home-header .home-btn {
+  background: transparent;
+  margin-top: ($grid-gutter-width * 4);
+  padding: ($grid-gutter-width * 1.5);
+  transition: all 0.2s ease;
+
+  @media screen and (min-width: $screen-md-min) {
+    margin-top: ($grid-gutter-width * 6);
+    padding: ($grid-gutter-width * 2) ($grid-gutter-width * 3);
+  }
+}
+.home-header .home-btn:hover {
+
+}
+
+.home-header .home-btn span:after {
+  content: "→";
+  //font-family: $font-family-monospace;
+  font-weight: normal;
+  transition: all 0.3s ease;
+  margin-left: -($grid-gutter-width);
+  opacity: 0;
+}
+.home-header a:hover span:after {
+  @media screen and (min-width: $screen-sm-min) {
+    margin-left: $grid-gutter-width;
+    opacity: 1;
+  }
+}

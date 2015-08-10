@@ -17,12 +17,15 @@
 }
 
 .home-project--image {
-  width:100%;
+    background-position: bottom !important;
+    background-size: cover !important;
+    padding-bottom: 40%;
   @media screen and (min-width: $screen-sm-min) {
     opacity: 0.75;
     transition: all 0.25s ease-in-out;
   }
 }
+
 
 .project-block a:hover .home-project--image {
   @media screen and (min-width: $screen-sm-min) {

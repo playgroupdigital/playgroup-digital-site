@@ -26,12 +26,13 @@ body{
 }
 // Import Module Styles
 @import "modules/header";
+@import "modules/header-home";
 @import "modules/block-section";
 @import "modules/project-block";
 @import "modules/blog-section--home";
 @import "modules/twitter-section";
 @import "modules/footer";
-@import "modules/blog-listing";
+//@import "modules/blog-listing";
 @import "modules/blog-listing--single";
 @import "modules/blog-listing--scroll";
 @import "modules/work-single";

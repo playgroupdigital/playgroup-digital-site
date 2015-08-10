@@ -35,10 +35,11 @@
 .about-header--text p{
     color: $white;
      @media screen and (min-width: $screen-sm-min) {
-        font-size: $font-size-h4;
+        font-size: $font-size-h5;
         line-height: 1.35;
     }
     @media screen and (min-width: $screen-md-min) {
+         font-size: $font-size-h4;
     }
 }
 
@@ -80,7 +81,7 @@
 }
 
 .about-banner {
-    background: #1b1b26;
+    background: $dark-blue-grey;
     position: relative;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -249,4 +250,45 @@
 
 .people-profile h5 {
     margin-bottom: 0;
+}
+
+
+.about-section--dark {
+    background:$dark-blue-grey;
+    padding-top: ($grid-gutter-width * 3);
+    padding-bottom:($grid-gutter-width * 3);
+    @media screen and (min-width: $screen-sm-min) {
+  }
+}
+
+.about-section--dark h5{
+        margin-top: 0;
+        color: $white;
+        font-family: $font-family-sans-serif-demi;
+}
+
+.about-section--clients {
+    padding-top: ($grid-gutter-width * 3);
+    padding-bottom:($grid-gutter-width * 3);
+    @media screen and (min-width: $screen-sm-min) {
+        padding-top: ($grid-gutter-width * 6);
+        padding-bottom:($grid-gutter-width * 0);
+  }
+
+}
+
+.clients-logos {
+    @media screen and (max-width: ($screen-sm-min - 1px) ) {
+       padding-top: ($grid-gutter-width * 4.5);
+  }
+
+}
+
+.client-section--logo {
+    background-position: bottom !important;
+    background-size: cover !important;
+    padding-bottom: 100%;
+    -webkit-filter: brightness(160%);
+    //border: 1px solid white;
+    margin-bottom:($grid-gutter-width * 1.5);
 }
