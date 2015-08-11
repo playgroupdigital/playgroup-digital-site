@@ -1,0 +1,180 @@
+.work-home, .work-home--large {
+  background: $white;
+    margin: 0 0 ($grid-gutter-width * 3) 0;
+
+
+@media screen and (min-width: $screen-sm-min) {
+  margin: 0 0 ($grid-gutter-width * 1) 0;
+  }
+}
+
+.work-home--image {
+    background-position: bottom !important;
+    background-size: cover !important;
+    padding-bottom: 60%;
+    @media screen and (min-width: $screen-sm-min) {
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
+      transform: translateZ(0);
+  }
+}
+
+//Make this inline for wordpress shenanigans
+.work-mask {
+background: #0000ee;
+}
+
+
+.work-home--text {
+  transition: all 0.3s ease;
+  @media screen and (min-width: $screen-sm-min) {
+    position: absolute;
+    bottom:0;
+    left: 10%;
+    opacity: 0;
+  }
+}
+.work-home:hover .work-home--image{
+  @media screen and (min-width: $screen-sm-min) {
+  opacity: 0.15;
+}
+}
+
+.work-home:hover .work-home--text{
+bottom:10%;
+opacity: 1;
+}
+
+.work-home--client {
+color: $white;
+position: absolute;
+left: 10%;
+top:15%
+}
+
+.work-home--text  h2{
+    color:  $gray-dark;
+    font-size: $font-size-base;
+    font-family: $font-family-sans-serif-demi;
+    margin: ($grid-gutter-width * 3) 0 ($grid-gutter-width * 1) 0;
+    @media screen and (min-width: $screen-sm-min) {
+    font-size: $font-size-h4;
+  }
+}
+
+.work-home--text h2 a {
+  @include link-underline-base($brand-primary , $white);
+  @include link-underline-position($font-size-base);
+  @media screen and (min-width: $screen-sm-min) {
+    color: $white;
+    @include link-underline-position($font-size-h4);
+  }
+}
+
+.work-home--text p {
+
+  @media screen and (min-width: $screen-sm-min) {
+  color: $white;
+}
+}
+
+.work-home h4 {
+  margin: 0 0 (ceil($grid-gutter-width/2)) 0;
+  font-size: $font-size-base;
+  color: $gray;
+  line-height: 1.333;
+  @media screen and (min-width: $screen-sm-min) {
+
+  }
+}
+
+
+.work-home a:hover .project-block--link  {
+  @media screen and (min-width: $screen-sm-min) {
+    bottom: 2.5%;
+    opacity: 1;
+  }
+}
+
+
+.work-home--large--image {
+    background-position: bottom !important;
+    background-size: cover !important;
+    padding-bottom: 60%;
+    @media screen and (min-width: $screen-sm-min) {
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
+      transform: translateZ(0);
+  }
+}
+
+.work-home--large--text {
+  transition: all 0.3s ease;
+  @media screen and (min-width: $screen-sm-min) {
+    position: absolute;
+    bottom:0;
+    left: 5%;
+    opacity: 0;
+  }
+}
+.work-home--large:hover .work-home--large--image{
+  @media screen and (min-width: $screen-sm-min) {
+  opacity: 0.15;
+}
+}
+
+.work-home--large:hover .work-home--large--text{
+bottom:5%;
+opacity: 1;
+}
+
+.work-home--large--client {
+color: $white;
+position: absolute;
+left: 5%;
+top:7.5%
+}
+
+.work-home--large--text  h2{
+    color:  $gray-dark;
+    font-size: $font-size-base;
+    font-family: $font-family-sans-serif-demi;
+    margin: ($grid-gutter-width * 3) 0 ($grid-gutter-width * 1) 0;
+    @media screen and (min-width: $screen-sm-min) {
+    font-size: $font-size-h4;
+  }
+}
+
+.work-home--large--text h2 a {
+  @include link-underline-base($brand-primary , $white);
+  @include link-underline-position($font-size-base);
+  @media screen and (min-width: $screen-sm-min) {
+    color: $white;
+    @include link-underline-position($font-size-h4);
+  }
+}
+
+.work-home--large--text p {
+
+  @media screen and (min-width: $screen-sm-min) {
+  color: $white;
+}
+}
+
+.work-home--large h4 {
+  margin: 0 0 (ceil($grid-gutter-width/2)) 0;
+  font-size: $font-size-base;
+  color: $gray;
+  line-height: 1.333;
+  @media screen and (min-width: $screen-sm-min) {
+
+  }
+}
+
+
+.work-home--large a:hover .project-block--link  {
+  @media screen and (min-width: $screen-sm-min) {
+    bottom: 2.5%;
+    opacity: 1;
+  }
+}

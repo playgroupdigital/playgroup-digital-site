@@ -5185,6 +5185,215 @@ body {
   }
 }
 
+.work-home, .work-home--large {
+  background: #fff;
+  margin: 0 0 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home, .work-home--large {
+    margin: 0 0 10px 0;
+  }
+}
+
+.work-home--image {
+  background-position: bottom !important;
+  background-size: cover !important;
+  padding-bottom: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--image {
+    opacity: 1;
+    -webkit-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+}
+
+.work-mask {
+  background: #0000ee;
+}
+
+.work-home--text {
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--text {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-home:hover .work-home--image {
+    opacity: 0.15;
+  }
+}
+
+.work-home:hover .work-home--text {
+  bottom: 10%;
+  opacity: 1;
+}
+
+.work-home--client {
+  color: #fff;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+}
+
+.work-home--text h2 {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
+  margin: 30px 0 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--text h2 {
+    font-size: 22px;
+  }
+}
+
+.work-home--text h2 a {
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(top, #0000ee 50%, #fff 75%);
+  background-image: linear-gradient(to bottom, #0000ee 50%, #fff 75%);
+  background-size: 2px 2px;
+  background-repeat: repeat-x;
+  background-position: 0px 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--text h2 a {
+    color: #fff;
+    background-position: 0px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--text p {
+    color: #fff;
+  }
+}
+
+.work-home h4 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.333;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home a:hover .project-block--link {
+    bottom: 2.5%;
+    opacity: 1;
+  }
+}
+
+.work-home--large--image {
+  background-position: bottom !important;
+  background-size: cover !important;
+  padding-bottom: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--large--image {
+    opacity: 1;
+    -webkit-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+}
+
+.work-home--large--text {
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--large--text {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--large:hover .work-home--large--image {
+    opacity: 0.15;
+  }
+}
+
+.work-home--large:hover .work-home--large--text {
+  bottom: 5%;
+  opacity: 1;
+}
+
+.work-home--large--client {
+  color: #fff;
+  position: absolute;
+  left: 5%;
+  top: 7.5%;
+}
+
+.work-home--large--text h2 {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
+  margin: 30px 0 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--large--text h2 {
+    font-size: 22px;
+  }
+}
+
+.work-home--large--text h2 a {
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(top, #0000ee 50%, #fff 75%);
+  background-image: linear-gradient(to bottom, #0000ee 50%, #fff 75%);
+  background-size: 2px 2px;
+  background-repeat: repeat-x;
+  background-position: 0px 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--large--text h2 a {
+    color: #fff;
+    background-position: 0px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--large--text p {
+    color: #fff;
+  }
+}
+
+.work-home--large h4 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.333;
+}
+
+@media screen and (min-width: 768px) {
+  .work-home--large a:hover .project-block--link {
+    bottom: 2.5%;
+    opacity: 1;
+  }
+}
+
 .blog-home {
   border-bottom: 1px solid #d9d9d9;
 }
