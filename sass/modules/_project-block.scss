@@ -19,12 +19,14 @@
 .home-project--image {
     background-position: bottom !important;
     background-size: cover !important;
-    padding-bottom: 40%;
+    padding-bottom: 60%;
   @media screen and (min-width: $screen-sm-min) {
+    padding-bottom: 50%;
     opacity: 0.75;
     transition: all 0.25s ease-in-out;
   }
 }
+
 
 
 .project-block a:hover .home-project--image {
@@ -41,6 +43,7 @@
 
   @media screen and (min-width: $screen-sm-min) {
     position: absolute;
+    left: 5%;
     top: 5%;
     z-index: 1;
   }

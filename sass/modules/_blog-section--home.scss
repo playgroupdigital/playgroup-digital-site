@@ -53,23 +53,7 @@
   }
 }
 
-.blog-section a:after{
-    @media screen and (min-width: $screen-md-min) {
-    content: "→";
-    color:$gray-light;
-    font-size: $font-size-h2;
-    float: right;
-    margin-right: $grid-gutter-width;
-    opacity: 1;
-    transition: all 0.2s ease;
-    }
-  }
 
-.blog-section a:hover:after{
-    @media screen and (min-width: $screen-sm-min) {
-      margin-right: 0
-    }
-  }
 
 
 .project-block--link h4:after {
