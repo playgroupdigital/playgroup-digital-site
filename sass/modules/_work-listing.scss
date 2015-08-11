@@ -1,5 +1,10 @@
 .work-block {
   background: $white;
+    padding-bottom:($grid-gutter-width * 3);
+  @media screen and (min-width: $screen-sm-min) {
+
+  padding-bottom:($grid-gutter-width * 9);
+  }
 }
 .work-page--meta  {
   padding-bottom:($grid-gutter-width * 3);
@@ -96,7 +101,7 @@ top:12.5%
     color:  $gray-dark;
     font-size: $font-size-base;
     font-family: $font-family-sans-serif-demi;
-    margin: ($grid-gutter-width * 3) 0 ($grid-gutter-width * 1) 0;
+    margin: ($grid-gutter-width * 2) 0 ($grid-gutter-width * 1) 0;
     @media screen and (min-width: $screen-sm-min) {
     font-size: $font-size-h4;
   }
@@ -112,9 +117,11 @@ top:12.5%
 }
 
 .work-item--text p {
-
+  font-size: $font-size-small;
+  color: $gray-light;
   @media screen and (min-width: $screen-sm-min) {
   color: $white;
+  font-size: $font-size-base;
 }
 }
 

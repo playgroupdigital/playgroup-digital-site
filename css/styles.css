@@ -5185,6 +5185,18 @@ body {
   }
 }
 
+.work-block--home {
+  background: #fff;
+  padding-bottom: 30px;
+  border-bottom: #eeeeee 1px solid;
+}
+
+@media screen and (min-width: 768px) {
+  .work-block--home {
+    padding-bottom: 60px;
+  }
+}
+
 .work-home, .work-home--large {
   background: #fff;
   margin: 0 0 30px 0;
@@ -5252,7 +5264,7 @@ body {
   color: #333333;
   font-size: 16px;
   font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
-  margin: 30px 0 10px 0;
+  margin: 20px 0 10px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -5277,9 +5289,15 @@ body {
   }
 }
 
+.work-home--text p {
+  font-size: 14px;
+  color: #9c9c9c;
+}
+
 @media screen and (min-width: 768px) {
   .work-home--text p {
     color: #fff;
+    font-size: 16px;
   }
 }
 
@@ -5300,7 +5318,7 @@ body {
 .work-home--large--image {
   background-position: bottom !important;
   background-size: cover !important;
-  padding-bottom: 60%;
+  padding-bottom: 50%;
 }
 
 @media screen and (min-width: 768px) {
@@ -5349,7 +5367,7 @@ body {
   color: #333333;
   font-size: 16px;
   font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
-  margin: 30px 0 10px 0;
+  margin: 20px 0 10px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -5374,9 +5392,15 @@ body {
   }
 }
 
+.work-home--large--text p {
+  font-size: 14px;
+  color: #9c9c9c;
+}
+
 @media screen and (min-width: 768px) {
   .work-home--large--text p {
     color: #fff;
+    font-size: 16px;
   }
 }
 
@@ -6136,6 +6160,13 @@ textarea, input {
 
 .work-block {
   background: #fff;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .work-block {
+    padding-bottom: 90px;
+  }
 }
 
 .work-page--meta {
@@ -6254,7 +6285,7 @@ textarea, input {
   color: #333333;
   font-size: 16px;
   font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
-  margin: 30px 0 10px 0;
+  margin: 20px 0 10px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -6279,9 +6310,15 @@ textarea, input {
   }
 }
 
+.work-item--text p {
+  font-size: 14px;
+  color: #9c9c9c;
+}
+
 @media screen and (min-width: 768px) {
   .work-item--text p {
     color: #fff;
+    font-size: 16px;
   }
 }
 
