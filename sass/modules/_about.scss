@@ -190,19 +190,14 @@
     background-position: center !important;
     background-size: cover !important;
     padding-bottom: 100%;
+    opacity: 0.25;
+    transition: all 0.5s ease;
+    transform: translateZ(0);
     @include greyscale;
     @media screen and (min-width: $screen-sm-min) {
     }
-
 }
-
-
-.about-instagram-half {
-    transition: all 1s ease;
-    opacity: 0.25;
-}
-
-.about-instagram-half:hover {
+.half-wrap a:hover .about-instagram-half {
     opacity: 0.1;
 }
 

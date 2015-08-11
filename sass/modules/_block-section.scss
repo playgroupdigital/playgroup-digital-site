@@ -16,10 +16,10 @@
 
 .block-section--heading p {
   margin-bottom: 0;
+  color: $gray-dark;
   font-size: $font-size-base;
   @media screen and (min-width: $screen-sm-min) {
-    color: $gray-dark;
-
+    font-size: $font-size-h4;
   }
 }
 

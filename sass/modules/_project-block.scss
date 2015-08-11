@@ -79,7 +79,7 @@
 .project-block h4 {
   margin: 0 0 (ceil($grid-gutter-width/2)) 0;
   font-size: $font-size-base;
-  color: $gray-light;
+  color: $gray;
   line-height: 1.333;
   @media screen and (min-width: $screen-sm-min) {
     margin: 0 0 ($grid-gutter-width/2) 0;

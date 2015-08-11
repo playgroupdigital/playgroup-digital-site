@@ -40,7 +40,7 @@ margin: 0 0 ($grid-gutter-width * 3) 0;
 
 .blog-entry--single h2{
    color:  $gray-dark;
-    font-size: $font-size-base;
+    font-size: $font-size-large;
     font-family: $font-family-sans-serif-demi;
     margin: ($grid-gutter-width * 3) 0 ($grid-gutter-width * 2) 0;
     @media screen and (min-width: $screen-sm-min) {
@@ -50,7 +50,7 @@ margin: 0 0 ($grid-gutter-width * 3) 0;
 
 .blog-entry--single h2 a {
   @include link-underline-base($brand-primary , $white);
-  @include link-underline-position($font-size-base);
+  @include link-underline-position($font-size-large);
   @media screen and (min-width: $screen-sm-min) {
     @include link-underline-position($font-size-h4);
   }
@@ -69,42 +69,59 @@ color: $gray-light;
 }
 
 .blog-header {
-    background: $brand-primary;
+  transform: translateZ(0);
     position: relative;
 }
 
 .blog-header--image {
+    transform: translateZ(0);
+    transition: opacity 0.5s ease;
     background-position: center !important;
     background-size: cover !important;
-    opacity: 0.25;
     padding-bottom: 100%;
-    @include greyscale;
+    opacity: 0.25;
     @media screen and (min-width: $screen-sm-min) {
+    opacity: 0.55;
     padding-bottom: 40%;
     }
+
 }
+
+.blog-header:hover .blog-header--image {
+   opacity: 0.1;
+}
+
 
 .blog-header--text {
-      color: $white;
+    color: $white;
     position: absolute;
+    bottom:5%;
+    @media screen and (min-width: $screen-sm-min) {
     bottom:10%;
+  }
+
 }
 
-.blog-header--text h1{
+.blog-header--text a h1{
     color: $white;
-    font-size: $font-size-base;
+    display: inline-block;
+    font-size: $font-size-large;
     margin-bottom:  ($grid-gutter-width / 2);
     @media screen and (min-width: $screen-sm-min) {
-        font-size: $font-size-h4;
+       font-size: $font-size-h4;
     }
     @media screen and (min-width: $screen-md-min) {
+
     }
 }
+
+
+
 
 .blog-header--text p, .blog-header--text a{
     color: $white;
      @media screen and (min-width: $screen-sm-min) {
-        font-size: $font-size-h5;
+        font-size: $font-size-base;
         line-height: 1.35;
     }
     @media screen and (min-width: $screen-md-min) {
@@ -120,9 +137,13 @@ color: $gray-light;
         @include link-underline-position($font-size-h5);
     }
     @media screen and (min-width: $screen-md-min) {
-      @include link-underline-base($brand-primary , $white);
+      @include link-underline-base(transparent ,  $white);
       @include link-underline-position($font-size-h4);
     }
+}
+
+.blog-navigation {
+   border-top: $gray-lighter 1px solid;
 }
 
 .blog-navigation--links {
@@ -142,9 +163,11 @@ color: $gray-light;
 
 
 .categories-p {
+  color: $gray-light;
   float: none;
   @media screen and (max-width: ($screen-sm-min - 1)) {
      padding-top: ($grid-gutter-width * 3);
+     padding-bottom: ($grid-gutter-width * 1.5);
   }
 }
 
@@ -178,3 +201,45 @@ color: $gray-light;
     margin-left: ($grid-gutter-width * 2);
   }
 }
+
+.blog-frontpage--meta  {
+  padding-bottom:($grid-gutter-width * 3);
+  @media screen and (min-width: $screen-sm-min) {
+  padding-top:($grid-gutter-width * 6);
+  padding-bottom:($grid-gutter-width * 4.5);
+  }
+}
+
+.blog-frontpage--meta p{
+  margin-bottom: 0px;
+}
+
+.blog-frontpage--meta p {
+  float: left;
+}
+
+.blog-frontpage--meta ul {
+  clear: both;
+  margin-bottom: 0;
+  @media screen and (min-width: $screen-sm-min) {
+    clear: none;
+  }
+}
+
+.blog-frontpage--meta li  {
+  display: inline-block;
+  padding-right: ($grid-gutter-width / 2);
+}
+
+.blog-frontpage--meta li:not(:last-child):after  {
+
+  content: '/';
+  padding-left: ($grid-gutter-width );
+
+}
+
+.blog-frontpage--meta a {
+  @include link-underline-base($brand-primary , $white);
+  @include link-underline-position($font-size-base);
+}
+

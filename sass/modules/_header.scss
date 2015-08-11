@@ -42,8 +42,10 @@
   font-size: $font-size-large;
   line-height: $line-height-computed;
   height: $navbar-height;
-  width: 125px;
-  margin-top:-12.5px;
+  transform: translateZ(0);
+
+
+
 
 
   &:hover,
@@ -53,6 +55,12 @@
 
   > img {
     display: block;
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+      width: 125px;
   }
 
   @media (min-width: $grid-float-breakpoint) {
@@ -86,9 +94,6 @@
 }
 
 // Navbar toggle
-//
-// Custom button for toggling the `.navbar-collapse`, powered by the collapse
-// JavaScript plugin.
 
 .navbar-toggle {
   position: relative;
@@ -97,12 +102,11 @@
   padding: 9px 0px;
   @include navbar-vertical-align(34px);
   background-color: transparent;
-  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  background-image: none;
   border: 1px solid transparent;
   border-radius: $border-radius-base;
 
-  // We remove the `outline` here, but later compensate by attaching `:hover`
-  // styles to `:focus`.
+
   &:focus {
     outline: 0;
   }
@@ -240,15 +244,6 @@
 
 
 
-// Navbar collapse (body)
-//
-// Group your navbar content into this for easy collapsing and expanding across
-// various device sizes. By default, this content is collapsed when <768px, but
-// will expand past that for a horizontal display.
-//
-// To start (on mobile devices) the navbar links, forms, and buttons are stacked
-// vertically and include a `max-height` to overflow in case you have too much
-// content for the user's viewport.
 
 
 @media (max-width: $grid-float-breakpoint) {
@@ -260,6 +255,7 @@
   box-shadow: none;
   @include clearfix;
   overflow-scrolling: touch;
+  border-top: 1px solid $gray-lighter;
   &.in {
     overflow-y: auto;
   }
@@ -269,99 +265,5 @@
 
 
 
-//
-// Jumbotron
-// --------------------------------------------------
 
 
-.hero {
-  padding-top: $jumbotron-padding * 4;
-  padding-bottom: $jumbotron-padding;
-  color: $jumbotron-color;
-  background-color: transparent;
-
-  h1,
-  .h1 {
-    color: $jumbotron-heading-color;
-    font-size: $font-size-h4;
-    font-family: $font-family-sans-serif;
-  }
-
-  p {
-    margin-bottom: ($jumbotron-padding / 2);
-    font-size: $jumbotron-font-size;
-    font-weight: 200;
-  }
-
-  > hr {
-    border-top-color: darken($jumbotron-bg, 10%);
-  }
-
-  .hero-text a {
-    color: $white;
-  }
-
-   @media screen and (min-width: $screen-sm-min) {
-    padding-top: ($jumbotron-padding * 6);
-    padding-bottom: ($jumbotron-padding * 3);
-
-    .container &,
-    .container-fluid & {
-      padding-left:  ($jumbotron-padding * 0);
-      padding-right: ($jumbotron-padding * 0);
-    }
-    h1,
-     .h1 {
-       font-size: $font-size-h2;
-
-    }
-  }
-  @media screen and (min-width: $screen-md-min) {
-    padding: ($jumbotron-padding * 5) 0 ($jumbotron-padding * 3) 0;
-  }
-  @media screen and (min-width: $screen-lg-min) {
-    padding: ($jumbotron-padding * 7) 0 ($jumbotron-padding * 3) 0;
-
-  }
-}
-
-.hero-text a:not(.btn) {
-    color: $white;
-    //text-decoration: $link-hover-underline;
-    text-decoration: none;
-    @include link-underline-base($white, $white);
-    @include link-underline-position($font-size-h4);
-    @media screen and (min-width: $screen-sm-min) {
-      @include link-underline-position($font-size-h2);
-  }
-}
-
-
-.hero .home-btn {
-  margin-top: ($grid-gutter-width * 4);
-  padding: ($grid-gutter-width * 1.5);
-  transition: all 0.2s ease;
-
-  @media screen and (min-width: $screen-md-min) {
-    margin-top: ($grid-gutter-width * 6);
-    padding: ($grid-gutter-width * 2) ($grid-gutter-width * 3);
-  }
-}
-.hero .home-btn:hover {
-  background: $brand-primary ;
-}
-
-.hero .home-btn span:after {
-  content: "→";
-  //font-family: $font-family-monospace;
-  font-weight: normal;
-  transition: all 0.3s ease;
-  margin-left: -($grid-gutter-width);
-  opacity: 0;
-}
-.hero a:hover span:after {
-  @media screen and (min-width: $screen-sm-min) {
-    margin-left: $grid-gutter-width;
-    opacity: 1;
-  }
-}

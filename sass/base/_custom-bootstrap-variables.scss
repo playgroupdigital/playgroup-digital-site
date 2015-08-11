@@ -55,7 +55,7 @@
 // $font-family-base:        $font-family-sans-serif
 
    $font-size-base:          16px;
-   $font-size-large:         ceil(($font-size-base * 1.33)); // ~21.328px
+   $font-size-large:         ceil(($font-size-base * 1.15)); // ~21.328px
    $font-size-small:         ceil(($font-size-base * 0.87)); // ~14px
 
    $font-size-h1:            floor(($font-size-base * 3.157)); // ~50.512px

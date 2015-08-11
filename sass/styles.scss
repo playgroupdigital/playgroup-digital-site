@@ -11,14 +11,15 @@
 // Import Type Styles
 @import "base/typography";
 
-
+* {
+  backface-visibility: hidden;
+}
 html {
   overflow-y: scroll;
 
 }
 body{
   overflow-x: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 .animate {
