@@ -1,9 +1,10 @@
 .footer {
   font-size: $font-size-small;
+   background: $brand-grey;
 }
 
 .footer-text {
-  background: $brand-grey;
+
   color: $white;
   padding-top: ($grid-gutter-width * 4.5);
   padding-bottom:($grid-gutter-width * 4.5);

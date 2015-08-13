@@ -118,6 +118,7 @@
 .project-content--block {
   padding-top:($grid-gutter-width * 3);
   padding-bottom:($grid-gutter-width * 3);
+  position: relative;
   //border: 1px solid red;
   @media screen and (min-width: $screen-sm-min) {
   padding-top:($grid-gutter-width * 6);
@@ -254,4 +255,212 @@
   }
 
 }
+
+
+
+
+
+.work-single {
+  background: $white;
+}
+
+.work-single--featured {
+  background-position: center !important;
+  background-size: cover !important;
+  padding-bottom: 40%;
+}
+
+.work-single--overview {
+    padding-top: ($grid-gutter-width * 4);
+    padding-bottom: ($grid-gutter-width * 4);
+    background: $dark-blue-grey;
+
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top: ($grid-gutter-width * 6);
+    padding-bottom: ($grid-gutter-width * 3);
+  }
+}
+.work-single--overview h1 {
+  display: inline-block;
+  font-size: $font-size-h4;
+  color: $white;
+  margin: 0;
+  font-family: $font-family-sans-serif-medium;
+  padding-bottom:($grid-gutter-width * 3);
+  @media screen and (min-width: $screen-sm-min) {
+    font-size: $font-size-h4;
+
+  }
+  @media screen and (min-width: $screen-md-min) {
+    font-size: $font-size-h3;
+  }
+}
+.work-single--overview h4 {
+  color: $white;
+  margin: 0;
+  padding-bottom:($grid-gutter-width * 1);
+  font-family: $font-family-sans-serif-demi;
+  font-size: $font-size-base;
+   @media screen and (max-width: $screen-sm-min) {
+    padding-top:($grid-gutter-width * 3);
+
+   }
+}
+
+.work-single--overview p {
+  color: $white;
+  padding-bottom: ($grid-gutter-width * 3);
+  float: left;
+  @media screen and (min-width: $screen-sm-min) {
+  float: none;
+  }
+}
+
+.work-single--project-info {
+     @media screen and (max-width: $screen-sm-min) {
+  border-bottom: 1px solid $gray-light-border;
+   }
+}
+
+.work-single--project-info p {
+  padding-bottom: ($grid-gutter-width * 0);
+}
+
+
+
+.work-single--overview-inverse {
+    padding-top: ($grid-gutter-width * 4);
+    padding-bottom: ($grid-gutter-width * 4);
+    background: $white;
+    border-bottom: 1px solid $gray-light-border;
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top: ($grid-gutter-width * 6);
+    padding-bottom: ($grid-gutter-width * 3);
+  }
+}
+.work-single--overview-inverse h1 {
+  font-size: $font-size-h4;
+  color: $brand-primary;
+  margin: 0;
+  padding-bottom:($grid-gutter-width * 3);
+  @media screen and (min-width: $screen-sm-min) {
+    font-size: $font-size-h4;
+
+  }
+  @media screen and (min-width: $screen-md-min) {
+    font-size: $font-size-h3;
+  }
+}
+.work-single--overview-inverse h4 {
+  color: $gray-dark;
+  margin: 0;
+  padding-bottom:($grid-gutter-width * 1);
+  font-family: $font-family-sans-serif-demi;
+  font-size: $font-size-base;
+}
+.work-single--overview-inverse p {
+
+  padding-bottom: ($grid-gutter-width * 3);
+  float: left;
+  @media screen and (min-width: $screen-sm-min) {
+  float: none;
+  }
+}
+
+
+
+
+
+
+
+
+.work-single--content {
+ padding-top: ($grid-gutter-width * 1);
+  padding-bottom:($grid-gutter-width * 3);
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top: ($grid-gutter-width * 6);
+    padding-bottom:($grid-gutter-width * 4.5);
+  }
+}
+
+
+.work-single--content h4 {
+  font-family:$font-family-sans-serif-demi;
+  font-size: $font-size-base;
+  color: $gray-dark;
+}
+
+.work-single--content img {
+  padding-top: ($grid-gutter-width * 3);
+  padding-bottom:($grid-gutter-width * 3);
+
+  @media screen and (min-width: $screen-sm-min) {
+  }
+}
+
+.work-single--content p+h4 {
+  padding-top: ($grid-gutter-width * 3);
+}
+
+.work-single--content blockquote {
+}
+
+.work-single--nav {
+  @media screen and (min-width: $screen-sm-min) {
+   // margin-bottom: ($grid-gutter-width * 3);
+  }
+}
+
+
+.work-single--navigation {
+  padding-top: ($grid-gutter-width * 3);
+  padding-bottom:($grid-gutter-width * 3);
+
+
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top: ($grid-gutter-width * 6);
+    padding-bottom:($grid-gutter-width * 6);
+
+  }
+}
+
+
+
+.work-single--content p a{
+  @include link-underline-base($brand-primary, $white);
+  @include link-underline-position($font-size-base);
+  color: $gray;
+}
+
+.work-single--navigation a, .blog-single--author a {
+  @include link-underline-base($brand-primary, $white);
+  @include link-underline-position($font-size-base);
+}
+
+.work-single--content blockquote a {
+  @include link-underline-base($brand-primary, $white);
+  @include link-underline-position($blockquote-font-size);
+
+}
+
+
+.img-half {
+  width: 50%;
+  float: left;
+}
+
+.img-third {
+  width: 33%;
+  float: left;
+}
+
+.img-quarter {
+  width: 25%;
+  float: left;
+}
+
+
+
+
+
 

@@ -4,6 +4,10 @@
 
 }
 
+
+.container-fluid--home {
+  padding: 0;
+}
 .container-header {
     background: $white;
 }
@@ -16,7 +20,7 @@
     padding-bottom: 80%;
     @include greyscale;
     @media screen and (min-width: $screen-sm-min) {
-    padding-bottom: 50%;
+    padding-bottom: 40%;
     }
 }
 
