@@ -44,6 +44,7 @@
   margin-bottom: ($grid-gutter-width /2);
   float: left;
   @media screen and (min-width: $screen-sm-min) {
+    font-size: $font-size-base;
   float: none;
   }
 }
