@@ -216,7 +216,7 @@
 .project-content--block.banner {
   color: $white;
   font-family: $font-family-sans-serif-demi;
-  background: $brand-primary;
+  background: $dark-blue-grey;
   padding-top:($grid-gutter-width * 3);
   @media screen and (min-width: $screen-sm-min) {
   padding-top:($grid-gutter-width * 6);
@@ -267,8 +267,16 @@
 .work-single--featured {
   background-position: center !important;
   background-size: cover !important;
+  padding-bottom: 60%;
+  @media screen and (min-width: $screen-sm-min) {
   padding-bottom: 40%;
+  }
+  @media screen and (min-width: $screen-lg-min) {
+  padding-bottom: 35%;
+  }
+
 }
+
 
 .work-single--overview {
     padding-top: ($grid-gutter-width * 4);
