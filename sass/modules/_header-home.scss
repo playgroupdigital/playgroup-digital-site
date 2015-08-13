@@ -13,10 +13,10 @@
     background-position: center !important;
     background-size: cover !important;
     opacity: 0.25;
-    padding-bottom: 110%;
+    padding-bottom: 80%;
     @include greyscale;
     @media screen and (min-width: $screen-sm-min) {
-    padding-bottom: 40%;
+    padding-bottom: 50%;
     }
 }
 
@@ -25,19 +25,31 @@
 .home-header--text {
     color: $white;
     position: absolute;
-    bottom:10%;
+     bottom:10%;
 }
 
-.home-header--text h1{
+.home-header--text h1, .home-header--text h1 a{
     color: $white;
-    font-size: $font-size-h3;
-    font-family: $font-family-sans-serif-demi;
+    font-size: $font-size-h2;
+    font-family: $font-family-sans-serif;
     margin-bottom:  ($grid-gutter-width * 2);
     @media screen and (min-width: $screen-sm-min) {
         font-size: $font-size-h2 ;
     }
     @media screen and (min-width: $screen-md-min) {
+      font-size: $font-size-h1 ;
 
+    }
+}
+
+ .home-header--text h1 a{
+    @include link-underline-base($brand-primary , $white);
+    @include link-underline-position($font-size-h2);
+    @media screen and (min-width: $screen-sm-min) {
+    @include link-underline-position($font-size-h2);
+    }
+    @media screen and (min-width: $screen-md-min) {
+    @include link-underline-position($font-size-h1);
 
     }
 }

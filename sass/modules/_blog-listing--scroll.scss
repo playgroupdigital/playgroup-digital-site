@@ -74,13 +74,14 @@ color: $gray-light;
 }
 
 .blog-header--image {
-    transform: translateZ(0);
-    transition: opacity 0.5s ease;
+
     background-position: center !important;
     background-size: cover !important;
     padding-bottom: 100%;
     opacity: 0.25;
     @media screen and (min-width: $screen-sm-min) {
+    transform: translateZ(0);
+    transition: all 0.5s ease;
     opacity: 0.55;
     padding-bottom: 40%;
     }
@@ -88,7 +89,9 @@ color: $gray-light;
 }
 
 .blog-header:hover .blog-header--image {
+   @media screen and (min-width: $screen-sm-min) {
    opacity: 0.1;
+}
 }
 
 
@@ -243,3 +246,43 @@ color: $gray-light;
   @include link-underline-position($font-size-base);
 }
 
+.paged-section--meta  {
+  padding-bottom:($grid-gutter-width * 3);
+  @media screen and (min-width: $screen-sm-min) {
+  padding-top:($grid-gutter-width * 6);
+  padding-bottom:($grid-gutter-width * 4.5);
+  }
+ }
+
+.paged-section--meta p{
+  margin-bottom: 0px;
+}
+
+.paged-section--meta p {
+  float: left;
+}
+
+.paged-section--meta ul {
+  clear: both;
+  margin-bottom: 0;
+  @media screen and (min-width: $screen-sm-min) {
+    clear: none;
+  }
+}
+
+.paged-section--meta li  {
+  display: inline-block;
+  padding-right: ($grid-gutter-width / 2);
+}
+
+.paged-section--meta li:not(:last-child):after  {
+
+  content: '/';
+  padding-left: ($grid-gutter-width );
+
+}
+
+.paged-section--meta a {
+  @include link-underline-base($brand-primary , $white);
+  @include link-underline-position($font-size-base);
+}

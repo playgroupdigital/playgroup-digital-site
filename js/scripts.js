@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 
     // Contact close
-    $('a.contact-close').click(function() {
+    $('button.close').click(function() {
         $('.contact').slideUp(500);
         return false;
     });

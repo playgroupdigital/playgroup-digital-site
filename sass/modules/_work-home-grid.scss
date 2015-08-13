@@ -3,7 +3,7 @@
   padding-bottom: $grid-gutter-width * 3;
   border-bottom: $gray-lighter 1px solid;
   @media screen and (min-width: $screen-sm-min) {
-    padding-bottom:($grid-gutter-width * 6);
+    padding-bottom:($grid-gutter-width * 9);
   }
 }
 .work-home, .work-home--large {
@@ -22,7 +22,7 @@
     padding-bottom: 60%;
     @media screen and (min-width: $screen-sm-min) {
     opacity: 1;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease;
       transform: translateZ(0);
   }
 }

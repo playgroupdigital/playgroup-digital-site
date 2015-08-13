@@ -1,5 +1,5 @@
 .container-fluid--contact {
-  background-color: $brand-grey;
+  background-color: $dark-blue-grey;
   color: $white;
   padding-top: ($grid-gutter-width * 4.5);
   padding-bottom:($grid-gutter-width * 4.5);
@@ -16,23 +16,98 @@
   display: none;
 }
 .contact-row {
+position: relative;
+}
 
+.contact-row a {
+  @include link-underline-base($white , transparent);
+  @include link-underline-position($font-size-base);
+}
+
+.contact-header {
+  padding-bottom:($grid-gutter-width * 3);
+}
+
+.contact-text {
+  padding-bottom:($grid-gutter-width * 2);
+  @media screen and (min-width: $screen-sm-min) {
+  padding-bottom:($grid-gutter-width * 0);
+}
 }
 
 .container-fluid--contact a {
   color: $white;
+  display: inline-block;
+  font-family: $font-family-sans-serif-demi;
+  padding-bottom:$grid-gutter-width;
 }
 
-.contact-close {
-  font-size: $font-size-h3;
+.container-fluid--contact a:after {
+  content: "";
 }
+
+
+
+//
+// Close icons
+// --------------------------------------------------
+.close-button {
+
+ @media screen and (min-width: $screen-sm-min) {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+}
+
+.close {
+  float: left;
+  font-size: $font-size-h1;
+  font-family: $font-family-sans-serif-light;
+  font-weight: normal;
+  line-height: 1;
+  color: $white;
+  @include opacity(1);
+   @media screen and (min-width: $screen-sm-min) {
+    float: right;
+ }
+
+
+  &:hover,
+  &:focus {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+    @include opacity(1);
+  }
+
+  // [converter] extracted button& to button.close
+}
+
+// Additional properties for button version
+// iOS requires the button element instead of an anchor tag.
+// If you want the anchor version, it requires `href="#"`.
+// See https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
 
 .container-fluid--home {
-  background-color: $brand-primary;
+  background: $brand-primary;
 }
 .container-header--border {
   background-color: $white;
-  border-bottom: $gray-light-border 1px solid;
+    @media screen and (max-width: $screen-sm-min - 1px) {
+  border-bottom: $gray-lighter 1px solid;
+}
 }
 // Navbar Brand/project name
 
