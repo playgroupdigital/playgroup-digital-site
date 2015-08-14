@@ -1,15 +1,16 @@
 .home-header {
-    background: $brand-primary;
-    position: relative;
+
 
 }
 
 
 .container-fluid--home {
   padding: 0;
+  position: relative;
+  transform: translateZ(0);
 }
 .container-header {
-    background: $white;
+    //background: $white;
 }
 
 
@@ -29,7 +30,9 @@
 .home-header--text {
     color: $white;
     position: absolute;
-     bottom:10%;
+
+    top: 50%;
+    transform: translateY(-45%);
 }
 
 .home-header--text h1, .home-header--text h1 a{

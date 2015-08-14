@@ -1,5 +1,5 @@
 .blog-entry {
-    background:$white;
+    //background:$white;
 }
 
 .blog-entry--list {
@@ -34,7 +34,7 @@ margin: 0 0 ($grid-gutter-width * 3) 0;
   margin-right: ($grid-gutter-width * 3);
 }
 .blog-entry--single p a{
-  @include link-underline-base($brand-primary , $white);
+  @include link-underline-base($brand-primary , transparent);
   @include link-underline-position($font-size-base);
 }
 
@@ -49,7 +49,7 @@ margin: 0 0 ($grid-gutter-width * 3) 0;
 }
 
 .blog-entry--single h2 a {
-  @include link-underline-base($brand-primary , $white);
+  @include link-underline-base($brand-primary , transparent);
   @include link-underline-position($font-size-large);
   @media screen and (min-width: $screen-md-min) {
     @include link-underline-position($font-size-h4);
@@ -63,7 +63,7 @@ color: $gray-light;
 }
 
 .blog-entry--meta p a{
-  @include link-underline-base($brand-primary , $white);
+  @include link-underline-base($brand-primary , transparent);
   @include link-underline-position($font-size-small)
 
 }
@@ -170,7 +170,7 @@ color: $gray-light;
 }
 
 .blog-navigation--links a {
-  @include link-underline-base($brand-primary, $white);
+  @include link-underline-base($brand-primary, transparent);
   @include link-underline-position($font-size-base);
 }
 
@@ -293,6 +293,6 @@ color: $gray-light;
 }
 
 .paged-section--meta a {
-  @include link-underline-base($brand-primary , $white);
+  @include link-underline-base($brand-primary , transparent);
   @include link-underline-position($font-size-base);
 }

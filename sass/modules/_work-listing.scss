@@ -1,5 +1,5 @@
 .work-block {
-  background: $white;
+  //background: $white;
     padding-bottom:($grid-gutter-width * 3);
   @media screen and (min-width: $screen-sm-min) {
 
@@ -42,11 +42,11 @@
 }
 
 .work-page--meta a {
-  @include link-underline-base($brand-primary , $white);
+  @include link-underline-base($brand-primary ,  transparent);
   @include link-underline-position($font-size-base);
 }
 .work-item {
-  background: $white;
+  //background: $white;
     margin: 0 0 ($grid-gutter-width * 3) 0;
 
 
@@ -72,12 +72,7 @@ background: #0000ee;
 }
 .work-item--text {
   transition: all 0.3s ease;
-  @media screen and (min-width: $screen-sm-min) {
-    position: absolute;
-    bottom:0;
-    left: 10%;
-    opacity: 0;
-  }
+
 }
 .work-item:hover .work-item--image{
   @media screen and (min-width: $screen-sm-min) {
@@ -111,7 +106,7 @@ top:12.5%
   @include link-underline-base($brand-primary , $white);
   @include link-underline-position($font-size-base);
   @media screen and (min-width: $screen-sm-min) {
-    color: $white;
+    //color: $white;
     @include link-underline-position($font-size-h4);
   }
 }

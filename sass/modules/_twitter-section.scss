@@ -1,5 +1,5 @@
 .twitter-block-section {
-  background: $white;
+  //background: $white;
   //background: #55acee;
 }
 
@@ -25,7 +25,7 @@ float: left;
 }
 
 .twitter-section {
-  background: $white;
+  //background: $white;
   //background: #55acee;
   padding-bottom: $grid-gutter-width *4.5;
 }
@@ -49,7 +49,7 @@ float: left;
 }
 
 .twitter-section  a {
-  @include link-underline-base($brand-primary , $white);
+  @include link-underline-base($brand-primary , transparent);
   @include link-underline-position($font-size-base);
   @media screen and (min-width: $screen-sm-min) {
     @include link-underline-position($font-size-base*1.125);
