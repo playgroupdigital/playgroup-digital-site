@@ -4,6 +4,7 @@
 }
 
 
+
 .container-fluid--home {
   padding: 0;
   position: relative;
@@ -18,10 +19,11 @@
     background-position: center !important;
     background-size: cover !important;
     opacity: 0.25;
-    padding-bottom: 80%;
+    min-height: 250px;
+    height: 30vh;
     @include greyscale;
     @media screen and (min-width: $screen-sm-min) {
-    padding-bottom: 40%;
+    // /padding-bottom: 40%;
     }
 }
 
@@ -31,14 +33,22 @@
     color: $white;
     position: absolute;
 
-    top: 50%;
-    transform: translateY(-45%);
+    top: 75%;
+    transform: translateY(-50%);
+}
+
+.home-header--text h1 {
+  color: $dark-blue-grey;
+}
+
+.home-header--text h1 a{
+  color: $dark-blue-grey;
 }
 
 .home-header--text h1, .home-header--text h1 a{
-    color: $white;
+    //color: $white;
     font-size: $font-size-h2;
-    font-family: $font-family-sans-serif;
+    font-family: $font-family-sans-serif-medium;
     margin-bottom:  ($grid-gutter-width * 2);
     @media screen and (min-width: $screen-sm-min) {
         font-size: $font-size-h2 ;

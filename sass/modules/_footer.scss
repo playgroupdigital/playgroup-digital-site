@@ -4,12 +4,20 @@
 }
 
 .footer-text {
-
   color: $white;
   padding-top: ($grid-gutter-width * 4.5);
   padding-bottom:($grid-gutter-width * 4.5);
   @media screen and (min-width: $screen-sm-min) {
   padding-top: ($grid-gutter-width * 6);
+  padding-bottom:($grid-gutter-width * 6);
+  }
+}
+
+.footer-text + .footer-text {
+  padding-top: ($grid-gutter-width * 0);
+  padding-bottom:($grid-gutter-width * 4.5);
+  @media screen and (min-width: $screen-sm-min) {
+  padding-top: ($grid-gutter-width * 0);
   padding-bottom:($grid-gutter-width * 6);
   }
 }

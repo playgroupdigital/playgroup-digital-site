@@ -43,8 +43,12 @@
   }
 }
 
-.blog-section--text:hover {
-  @media screen and (min-width: $screen-sm-min) {
+.blog-section--text a {
+    transition: all 0.3s ease;
+}
+
+.blog-section--text a:hover {
+    @media screen and (min-width: $screen-sm-min) {
   opacity: 0.5;
 }
 }

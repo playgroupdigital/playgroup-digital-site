@@ -101,7 +101,7 @@ button.close {
 
 
 .container-fluid--home {
-  background: $brand-primary;
+  // /background: $brand-primary;
 }
 .container-header--border {
   background-color: $white;
@@ -159,7 +159,7 @@ button.close {
 
 
 .navbar-inverse .navbar-collapse{
-  border-bottom: 1px solid $white;
+   border-bottom: $gray-lighter 1px solid;
   padding-bottom: $grid-gutter-width;
   @media screen and (min-width: $screen-sm-min) {
   border-bottom: none;
@@ -331,6 +331,7 @@ button.close {
   @include clearfix;
   overflow-scrolling: touch;
   border-top: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
   &.in {
     overflow-y: auto;
   }
