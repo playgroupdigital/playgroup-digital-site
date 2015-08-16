@@ -1,15 +1,14 @@
 .work-block--home{
   //background: $white;
-  padding-bottom: $grid-gutter-width * 3;
-  border-bottom: $gray-lighter 1px solid;
+  padding-bottom: $grid-gutter-width * 0;
   @media screen and (min-width: $screen-sm-min) {
-    padding-bottom:($grid-gutter-width * 0);
+    padding-bottom:($grid-gutter-width * 0.5);
   }
 }
 .work-home--large {
   background: $white;
   position: relative;
-  margin-bottom: $grid-gutter-width * 3;
+  margin-bottom: $grid-gutter-width * 2;
   @media screen and (min-width: $screen-sm-min) {
   margin-bottom: $grid-gutter-width * 0;
   }
@@ -39,15 +38,15 @@ color: $white;
 .work-home--large--image {
     background-position: bottom !important;
     background-size: cover !important;
-    padding-bottom: 50%;
+    padding-bottom: 60%;
     @media screen and (min-width: $screen-sm-min) {
     opacity: 1;
-    padding-bottom: 40%;
+    padding-bottom: 45%;
     transition: all 0.25s ease-in-out;
       transform: translateZ(0);
   }
   @media screen and (min-width: $screen-md-min) {
-padding-bottom: 35%;
+    padding-bottom: 40%;
   }
 }
 

@@ -861,8 +861,8 @@ pre code {
 
 @media screen and (min-width: 768px) {
   .container {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -903,8 +903,8 @@ pre code {
 
 @media screen and (min-width: 768px) {
   .container-fluid {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -4723,7 +4723,7 @@ button.close {
           transition: all 0.25s ease-in-out;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
-  font-family: "Avenir Next LT W01 Demi", Helvetica Neue, Arial, sans-serif;
+  font-family: "AvenirNextLTW01-Medium", Helvetica Neue, Arial, sans-serif;
 }
 
 .navbar-inverse .navbar-collapse {
@@ -5307,20 +5307,19 @@ button.close {
 }
 
 .work-block--home {
-  padding-bottom: 30px;
-  border-bottom: #eeeeee 1px solid;
+  padding-bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {
   .work-block--home {
-    padding-bottom: 0px;
+    padding-bottom: 5px;
   }
 }
 
 .work-home--large {
   background: #fff;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -5352,13 +5351,13 @@ button.close {
 .work-home--large--image {
   background-position: bottom !important;
   background-size: cover !important;
-  padding-bottom: 50%;
+  padding-bottom: 60%;
 }
 
 @media screen and (min-width: 768px) {
   .work-home--large--image {
     opacity: 1;
-    padding-bottom: 40%;
+    padding-bottom: 45%;
     -webkit-transition: all 0.25s ease-in-out;
             transition: all 0.25s ease-in-out;
     -webkit-transform: translateZ(0);
@@ -5368,7 +5367,7 @@ button.close {
 
 @media screen and (min-width: 992px) {
   .work-home--large--image {
-    padding-bottom: 35%;
+    padding-bottom: 40%;
   }
 }
 
